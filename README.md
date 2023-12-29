@@ -2,6 +2,8 @@
 
 This repository contains the implementation of an Apache Airflow Directed Acyclic Graph (DAG) for processing air quality data. The DAG performs the following tasks:
 
+![image](https://github.com/Ghifariezra/ETL-with-Airflow/assets/127650295/085f5ebe-f7b8-4dd8-9a25-586395a8b7c3)
+
 1. **Data Extraction**: Ingests data from the [OpenAQ API](https://docs.openaq.org/docs) to retrieve information on the current air quality worldwide.
 
 2. **Data Transformation**: Filters the retrieved data to include only information from Jakarta, Indonesia, and transforms it into a format suitable for storage in a database table.
