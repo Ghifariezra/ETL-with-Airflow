@@ -1,0 +1,93 @@
+[2023-12-17T11:18:40.467+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-03T04:00:00+00:00/task_id=Create_Table permission to 509
+[2023-12-17T11:18:40.473+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-03T04:00:00+00:00/task_id=Create_Table permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-03T04:00:00+00:00/task_id=Create_Table'
+[2023-12-17T11:18:40.645+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-03T04:00:00+00:00/task_id=Create_Table permission to 509
+[2023-12-17T11:18:40.647+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-03T04:00:00+00:00/task_id=Create_Table permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-03T04:00:00+00:00/task_id=Create_Table'
+[2023-12-17T11:18:40.782+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: air_quality.Create_Table scheduled__2023-12-03T04:00:00+00:00 [queued]>
+[2023-12-17T11:18:40.830+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: air_quality.Create_Table scheduled__2023-12-03T04:00:00+00:00 [queued]>
+[2023-12-17T11:18:40.844+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-12-17T11:18:41.258+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): Create_Table> on 2023-12-03 04:00:00+00:00
+[2023-12-17T11:18:41.274+0000] {standard_task_runner.py:57} INFO - Started process 2100 to run task
+[2023-12-17T11:18:41.279+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'air_quality', 'Create_Table', 'scheduled__2023-12-03T04:00:00+00:00', '--job-id', '345', '--raw', '--subdir', 'DAGS_FOLDER/airQuality.py', '--cfg-path', '/tmp/tmp7vctnade']
+[2023-12-17T11:18:41.281+0000] {standard_task_runner.py:85} INFO - Job 345: Subtask Create_Table
+[2023-12-17T11:18:41.482+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-03T04:00:00+00:00/task_id=Create_Table permission to 509
+[2023-12-17T11:18:41.483+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-03T04:00:00+00:00/task_id=Create_Table permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-03T04:00:00+00:00/task_id=Create_Table'
+[2023-12-17T11:18:41.495+0000] {task_command.py:416} INFO - Running <TaskInstance: air_quality.Create_Table scheduled__2023-12-03T04:00:00+00:00 [running]> on host 1a58977f5573
+[2023-12-17T11:18:41.901+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ghifari' AIRFLOW_CTX_DAG_ID='air_quality' AIRFLOW_CTX_TASK_ID='Create_Table' AIRFLOW_CTX_EXECUTION_DATE='2023-12-03T04:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-03T04:00:00+00:00'
+[2023-12-17T11:18:41.961+0000] {base.py:73} INFO - Using connection ID 'neonServerDB-Postgres' for task execution.
+[2023-12-17T11:18:44.343+0000] {airQuality.py:160} INFO - Table air_quality Already Exist
+[2023-12-17T11:18:44.392+0000] {python.py:194} INFO - Done. Returned value was: 
+        CREATE TABLE air_quality (
+            id serial primary key, 
+            city varchar(250),
+            country varchar(250), 
+            unit varchar(20), 
+            last_value float8, 
+            lat float8,
+            lng float8
+        )
+    
+[2023-12-17T11:18:44.489+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=air_quality, task_id=Create_Table, execution_date=20231203T040000, start_date=20231217T111840, end_date=20231217T111844
+[2023-12-17T11:18:44.598+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-17T11:18:44.710+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-12-17T12:18:12.406+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-03T04:00:00+00:00/task_id=Create_Table permission to 509
+[2023-12-17T12:18:12.419+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-03T04:00:00+00:00/task_id=Create_Table permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-03T04:00:00+00:00/task_id=Create_Table'
+[2023-12-17T12:18:12.640+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-03T04:00:00+00:00/task_id=Create_Table permission to 509
+[2023-12-17T12:18:12.646+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-03T04:00:00+00:00/task_id=Create_Table permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-03T04:00:00+00:00/task_id=Create_Table'
+[2023-12-17T12:18:12.904+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: air_quality.Create_Table scheduled__2023-12-03T04:00:00+00:00 [queued]>
+[2023-12-17T12:18:12.950+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: air_quality.Create_Table scheduled__2023-12-03T04:00:00+00:00 [queued]>
+[2023-12-17T12:18:12.953+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-12-17T12:18:13.216+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): Create_Table> on 2023-12-03 04:00:00+00:00
+[2023-12-17T12:18:13.234+0000] {standard_task_runner.py:57} INFO - Started process 4102 to run task
+[2023-12-17T12:18:13.255+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'air_quality', 'Create_Table', 'scheduled__2023-12-03T04:00:00+00:00', '--job-id', '601', '--raw', '--subdir', 'DAGS_FOLDER/airQuality.py', '--cfg-path', '/tmp/tmpufg4rot0']
+[2023-12-17T12:18:13.258+0000] {standard_task_runner.py:85} INFO - Job 601: Subtask Create_Table
+[2023-12-17T12:18:13.428+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-03T04:00:00+00:00/task_id=Create_Table permission to 509
+[2023-12-17T12:18:13.429+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-03T04:00:00+00:00/task_id=Create_Table permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-03T04:00:00+00:00/task_id=Create_Table'
+[2023-12-17T12:18:13.438+0000] {task_command.py:416} INFO - Running <TaskInstance: air_quality.Create_Table scheduled__2023-12-03T04:00:00+00:00 [running]> on host 1a58977f5573
+[2023-12-17T12:18:13.744+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ghifari' AIRFLOW_CTX_DAG_ID='air_quality' AIRFLOW_CTX_TASK_ID='Create_Table' AIRFLOW_CTX_EXECUTION_DATE='2023-12-03T04:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-03T04:00:00+00:00'
+[2023-12-17T12:18:13.766+0000] {base.py:73} INFO - Using connection ID 'neonServerDB-Postgres' for task execution.
+[2023-12-17T12:18:14.419+0000] {airQuality.py:161} INFO - Table air_quality Already Exist
+[2023-12-17T12:18:14.468+0000] {python.py:194} INFO - Done. Returned value was: 
+        CREATE TABLE air_quality (
+            id serial primary key, 
+            city varchar(250),
+            country varchar(250), 
+            unit varchar(20), 
+            last_value float8, 
+            lat float8,
+            lng float8
+        )
+    
+[2023-12-17T12:18:14.551+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=air_quality, task_id=Create_Table, execution_date=20231203T040000, start_date=20231217T121812, end_date=20231217T121814
+[2023-12-17T12:18:14.658+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-17T12:18:14.744+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-12-28T16:54:23.967+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-03T04:00:00+00:00/task_id=Create_Table permission to 509
+[2023-12-28T16:54:23.978+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-03T04:00:00+00:00/task_id=Create_Table permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-03T04:00:00+00:00/task_id=Create_Table'
+[2023-12-28T16:54:24.138+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-03T04:00:00+00:00/task_id=Create_Table permission to 509
+[2023-12-28T16:54:24.150+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-03T04:00:00+00:00/task_id=Create_Table permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-03T04:00:00+00:00/task_id=Create_Table'
+[2023-12-28T16:54:24.270+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: air_quality.Create_Table scheduled__2023-12-03T04:00:00+00:00 [queued]>
+[2023-12-28T16:54:24.299+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: air_quality.Create_Table scheduled__2023-12-03T04:00:00+00:00 [queued]>
+[2023-12-28T16:54:24.304+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-12-28T16:54:24.352+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): Create_Table> on 2023-12-03 04:00:00+00:00
+[2023-12-28T16:54:24.366+0000] {standard_task_runner.py:57} INFO - Started process 914 to run task
+[2023-12-28T16:54:24.385+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'air_quality', 'Create_Table', 'scheduled__2023-12-03T04:00:00+00:00', '--job-id', '1061', '--raw', '--subdir', 'DAGS_FOLDER/airQuality.py', '--cfg-path', '/tmp/tmp869pk2lv']
+[2023-12-28T16:54:24.387+0000] {standard_task_runner.py:85} INFO - Job 1061: Subtask Create_Table
+[2023-12-28T16:54:24.646+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-03T04:00:00+00:00/task_id=Create_Table permission to 509
+[2023-12-28T16:54:24.654+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-03T04:00:00+00:00/task_id=Create_Table permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-03T04:00:00+00:00/task_id=Create_Table'
+[2023-12-28T16:54:24.670+0000] {task_command.py:416} INFO - Running <TaskInstance: air_quality.Create_Table scheduled__2023-12-03T04:00:00+00:00 [running]> on host d67dd4682ccf
+[2023-12-28T16:54:25.227+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ghifari' AIRFLOW_CTX_DAG_ID='air_quality' AIRFLOW_CTX_TASK_ID='Create_Table' AIRFLOW_CTX_EXECUTION_DATE='2023-12-03T04:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-03T04:00:00+00:00'
+[2023-12-28T16:54:25.304+0000] {base.py:73} INFO - Using connection ID 'neonServerDB-Postgres' for task execution.
+[2023-12-28T16:54:25.596+0000] {airQuality.py:139} INFO - Table air_quality Already Exist
+[2023-12-28T16:54:25.665+0000] {python.py:194} INFO - Done. Returned value was: 
+        CREATE TABLE air_quality (
+            id serial primary key, 
+            city varchar(250),
+            country varchar(250), 
+            unit varchar(20), 
+            last_value float8, 
+            lat float8,
+            lng float8
+        )
+    
+[2023-12-28T16:54:25.916+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=air_quality, task_id=Create_Table, execution_date=20231203T040000, start_date=20231228T165424, end_date=20231228T165425
+[2023-12-28T16:54:26.116+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-28T16:54:26.230+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check

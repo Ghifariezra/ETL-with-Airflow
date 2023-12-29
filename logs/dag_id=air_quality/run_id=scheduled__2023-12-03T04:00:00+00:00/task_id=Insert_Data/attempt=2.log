@@ -1,0 +1,33 @@
+[2023-12-17T12:17:58.521+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-03T04:00:00+00:00/task_id=Insert_Data permission to 509
+[2023-12-17T12:17:58.523+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-03T04:00:00+00:00/task_id=Insert_Data permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-03T04:00:00+00:00/task_id=Insert_Data'
+[2023-12-17T12:17:58.751+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-03T04:00:00+00:00/task_id=Insert_Data permission to 509
+[2023-12-17T12:17:58.759+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-03T04:00:00+00:00/task_id=Insert_Data permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-03T04:00:00+00:00/task_id=Insert_Data'
+[2023-12-17T12:17:58.990+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: air_quality.Insert_Data scheduled__2023-12-03T04:00:00+00:00 [queued]>
+[2023-12-17T12:17:59.048+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: air_quality.Insert_Data scheduled__2023-12-03T04:00:00+00:00 [queued]>
+[2023-12-17T12:17:59.049+0000] {taskinstance.py:1361} INFO - Starting attempt 2 of 3
+[2023-12-17T12:17:59.123+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): Insert_Data> on 2023-12-03 04:00:00+00:00
+[2023-12-17T12:17:59.136+0000] {standard_task_runner.py:57} INFO - Started process 3869 to run task
+[2023-12-17T12:17:59.169+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'air_quality', 'Insert_Data', 'scheduled__2023-12-03T04:00:00+00:00', '--job-id', '581', '--raw', '--subdir', 'DAGS_FOLDER/airQuality.py', '--cfg-path', '/tmp/tmpx96gj5sd']
+[2023-12-17T12:17:59.174+0000] {standard_task_runner.py:85} INFO - Job 581: Subtask Insert_Data
+[2023-12-17T12:17:59.464+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-03T04:00:00+00:00/task_id=Insert_Data permission to 509
+[2023-12-17T12:17:59.471+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-03T04:00:00+00:00/task_id=Insert_Data permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-03T04:00:00+00:00/task_id=Insert_Data'
+[2023-12-17T12:17:59.490+0000] {task_command.py:416} INFO - Running <TaskInstance: air_quality.Insert_Data scheduled__2023-12-03T04:00:00+00:00 [running]> on host 1a58977f5573
+[2023-12-17T12:17:59.873+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ghifari' AIRFLOW_CTX_DAG_ID='air_quality' AIRFLOW_CTX_TASK_ID='Insert_Data' AIRFLOW_CTX_EXECUTION_DATE='2023-12-03T04:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-03T04:00:00+00:00'
+[2023-12-17T12:18:04.792+0000] {logging_mixin.py:154} INFO - city           object
+country        object
+unit           object
+last_value    float64
+lat           float64
+lng           float64
+dtype: object
+[2023-12-17T12:18:04.809+0000] {base.py:73} INFO - Using connection ID 'neonServerDB-Postgres' for task execution.
+[2023-12-17T12:18:05.484+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-12-17T12:18:05.502+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=air_quality, task_id=Insert_Data, execution_date=20231203T040000, start_date=, end_date=20231217T121805
+[2023-12-17T12:18:05.523+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 581 for task Insert_Data ((psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "dag_run_dag_id_execution_date_key"
+DETAIL:  Key (dag_id, execution_date)=(air_quality, 2023-12-03 04:00:00+00) already exists.
+
+[SQL: INSERT INTO dag_run (id, dag_id, queued_at, execution_date, start_date, end_date, state, run_id, creating_job_id, external_trigger, run_type, conf, data_interval_start, data_interval_end, last_scheduling_decision, dag_hash, log_template_id, updated_at) VALUES (%(id)s, %(dag_id)s, %(queued_at)s, %(execution_date)s, %(start_date)s, %(end_date)s, %(state)s, %(run_id)s, %(creating_job_id)s, %(external_trigger)s, %(run_type)s, %(conf)s, %(data_interval_start)s, %(data_interval_end)s, %(last_scheduling_decision)s, %(dag_hash)s, %(log_template_id)s, %(updated_at)s)]
+[parameters: {'id': 86, 'dag_id': 'air_quality', 'queued_at': datetime.datetime(2023, 12, 17, 12, 17, 24, 309082, tzinfo=Timezone('UTC')), 'execution_date': datetime.datetime(2023, 12, 3, 4, 0, tzinfo=Timezone('UTC')), 'start_date': datetime.datetime(2023, 12, 17, 12, 17, 25, 17481, tzinfo=Timezone('UTC')), 'end_date': None, 'state': 'running', 'run_id': 'scheduled__2023-12-03T04:00:00+00:00', 'creating_job_id': 248, 'external_trigger': False, 'run_type': 'scheduled', 'conf': <psycopg2.extensions.Binary object at 0x7f630f89f690>, 'data_interval_start': datetime.datetime(2023, 12, 3, 4, 0, tzinfo=Timezone('UTC')), 'data_interval_end': datetime.datetime(2023, 12, 4, 4, 0, tzinfo=Timezone('UTC')), 'last_scheduling_decision': datetime.datetime(2023, 12, 17, 12, 17, 57, 375449, tzinfo=Timezone('UTC')), 'dag_hash': 'f844d2530ee112e2bd8f9fe498b58b16', 'log_template_id': 2, 'updated_at': datetime.datetime(2023, 12, 17, 12, 17, 57, 672648, tzinfo=Timezone('UTC'))}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj); 3869)
+[2023-12-17T12:18:05.581+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-12-17T12:18:05.648+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

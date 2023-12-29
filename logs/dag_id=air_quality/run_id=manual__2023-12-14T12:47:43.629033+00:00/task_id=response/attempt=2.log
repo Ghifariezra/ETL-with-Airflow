@@ -1,0 +1,42 @@
+[2023-12-14T12:52:46.873+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-14T12:47:43.629033+00:00/task_id=response permission to 509
+[2023-12-14T12:52:46.878+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-14T12:47:43.629033+00:00/task_id=response permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-14T12:47:43.629033+00:00/task_id=response'
+[2023-12-14T12:52:46.987+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-14T12:47:43.629033+00:00/task_id=response permission to 509
+[2023-12-14T12:52:46.990+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-14T12:47:43.629033+00:00/task_id=response permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-14T12:47:43.629033+00:00/task_id=response'
+[2023-12-14T12:52:47.139+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: air_quality.response manual__2023-12-14T12:47:43.629033+00:00 [queued]>
+[2023-12-14T12:52:47.178+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: air_quality.response manual__2023-12-14T12:47:43.629033+00:00 [queued]>
+[2023-12-14T12:52:47.180+0000] {taskinstance.py:1361} INFO - Starting attempt 2 of 2
+[2023-12-14T12:52:47.242+0000] {taskinstance.py:1382} INFO - Executing <Task(_PythonDecoratedOperator): response> on 2023-12-14 12:47:43.629033+00:00
+[2023-12-14T12:52:47.257+0000] {standard_task_runner.py:57} INFO - Started process 1193 to run task
+[2023-12-14T12:52:47.272+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'air_quality', 'response', 'manual__2023-12-14T12:47:43.629033+00:00', '--job-id', '40', '--raw', '--subdir', 'DAGS_FOLDER/airQuality.py', '--cfg-path', '/tmp/tmpjc47p67b']
+[2023-12-14T12:52:47.277+0000] {standard_task_runner.py:85} INFO - Job 40: Subtask response
+[2023-12-14T12:52:47.471+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-14T12:47:43.629033+00:00/task_id=response permission to 509
+[2023-12-14T12:52:47.474+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-14T12:47:43.629033+00:00/task_id=response permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-14T12:47:43.629033+00:00/task_id=response'
+[2023-12-14T12:52:47.482+0000] {task_command.py:416} INFO - Running <TaskInstance: air_quality.response manual__2023-12-14T12:47:43.629033+00:00 [running]> on host d739bc9bef06
+[2023-12-14T12:52:47.797+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ghifari' AIRFLOW_CTX_DAG_ID='air_quality' AIRFLOW_CTX_TASK_ID='response' AIRFLOW_CTX_EXECUTION_DATE='2023-12-14T12:47:43.629033+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-12-14T12:47:43.629033+00:00'
+[2023-12-14T12:52:47.807+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/decorators/base.py", line 221, in execute
+    return_value = super().execute(context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/airQuality.py", line 38, in response
+    response = requests.get(url=url, headers=headers)
+  File "/home/airflow/.local/lib/python3.8/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/requests/sessions.py", line 575, in request
+    prep = self.prepare_request(req)
+  File "/home/airflow/.local/lib/python3.8/site-packages/requests/sessions.py", line 486, in prepare_request
+    p.prepare(
+  File "/home/airflow/.local/lib/python3.8/site-packages/requests/models.py", line 369, in prepare
+    self.prepare_headers(headers)
+  File "/home/airflow/.local/lib/python3.8/site-packages/requests/models.py", line 489, in prepare_headers
+    for header in headers.items():
+AttributeError: 'str' object has no attribute 'items'
+[2023-12-14T12:52:47.873+0000] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=air_quality, task_id=response, execution_date=20231214T124743, start_date=20231214T125247, end_date=20231214T125247
+[2023-12-14T12:52:47.926+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 40 for task response ('str' object has no attribute 'items'; 1193)
+[2023-12-14T12:52:47.971+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-12-14T12:52:48.032+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

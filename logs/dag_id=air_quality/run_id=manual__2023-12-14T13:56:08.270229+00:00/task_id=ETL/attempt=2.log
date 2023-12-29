@@ -1,0 +1,26 @@
+[2023-12-14T14:01:10.680+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-14T13:56:08.270229+00:00/task_id=ETL permission to 509
+[2023-12-14T14:01:10.682+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-14T13:56:08.270229+00:00/task_id=ETL permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-14T13:56:08.270229+00:00/task_id=ETL'
+[2023-12-14T14:01:10.713+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-14T13:56:08.270229+00:00/task_id=ETL permission to 509
+[2023-12-14T14:01:10.714+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-14T13:56:08.270229+00:00/task_id=ETL permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-14T13:56:08.270229+00:00/task_id=ETL'
+[2023-12-14T14:01:10.746+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: air_quality.ETL manual__2023-12-14T13:56:08.270229+00:00 [queued]>
+[2023-12-14T14:01:10.756+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: air_quality.ETL manual__2023-12-14T13:56:08.270229+00:00 [queued]>
+[2023-12-14T14:01:10.757+0000] {taskinstance.py:1361} INFO - Starting attempt 2 of 2
+[2023-12-14T14:01:10.771+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): ETL> on 2023-12-14 13:56:08.270229+00:00
+[2023-12-14T14:01:10.777+0000] {standard_task_runner.py:57} INFO - Started process 2202 to run task
+[2023-12-14T14:01:10.780+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'air_quality', 'ETL', 'manual__2023-12-14T13:56:08.270229+00:00', '--job-id', '42', '--raw', '--subdir', 'DAGS_FOLDER/airQuality.py', '--cfg-path', '/tmp/tmpk7mhy54p']
+[2023-12-14T14:01:10.781+0000] {standard_task_runner.py:85} INFO - Job 42: Subtask ETL
+[2023-12-14T14:01:10.830+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-14T13:56:08.270229+00:00/task_id=ETL permission to 509
+[2023-12-14T14:01:10.830+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-14T13:56:08.270229+00:00/task_id=ETL permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-14T13:56:08.270229+00:00/task_id=ETL'
+[2023-12-14T14:01:10.833+0000] {task_command.py:416} INFO - Running <TaskInstance: air_quality.ETL manual__2023-12-14T13:56:08.270229+00:00 [running]> on host d739bc9bef06
+[2023-12-14T14:01:10.911+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ghifari' AIRFLOW_CTX_DAG_ID='air_quality' AIRFLOW_CTX_TASK_ID='ETL' AIRFLOW_CTX_EXECUTION_DATE='2023-12-14T13:56:08.270229+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-12-14T13:56:08.270229+00:00'
+[2023-12-14T14:01:10.912+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+TypeError: ETL_airQuality() missing 2 required positional arguments: 'url' and 'headers'
+[2023-12-14T14:01:10.925+0000] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=air_quality, task_id=ETL, execution_date=20231214T135608, start_date=20231214T140110, end_date=20231214T140110
+[2023-12-14T14:01:10.938+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 42 for task ETL (ETL_airQuality() missing 2 required positional arguments: 'url' and 'headers'; 2202)
+[2023-12-14T14:01:10.953+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-12-14T14:01:10.969+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

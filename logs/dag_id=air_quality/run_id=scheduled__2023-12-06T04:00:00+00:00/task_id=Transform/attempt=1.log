@@ -1,0 +1,80 @@
+[2023-12-17T11:18:38.086+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-06T04:00:00+00:00/task_id=Transform permission to 509
+[2023-12-17T11:18:38.092+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-06T04:00:00+00:00/task_id=Transform permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-06T04:00:00+00:00/task_id=Transform'
+[2023-12-17T11:18:38.234+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-06T04:00:00+00:00/task_id=Transform permission to 509
+[2023-12-17T11:18:38.237+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-06T04:00:00+00:00/task_id=Transform permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-06T04:00:00+00:00/task_id=Transform'
+[2023-12-17T11:18:38.361+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: air_quality.Transform scheduled__2023-12-06T04:00:00+00:00 [queued]>
+[2023-12-17T11:18:38.403+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: air_quality.Transform scheduled__2023-12-06T04:00:00+00:00 [queued]>
+[2023-12-17T11:18:38.411+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-12-17T11:18:38.456+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): Transform> on 2023-12-06 04:00:00+00:00
+[2023-12-17T11:18:38.464+0000] {standard_task_runner.py:57} INFO - Started process 2080 to run task
+[2023-12-17T11:18:38.473+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'air_quality', 'Transform', 'scheduled__2023-12-06T04:00:00+00:00', '--job-id', '337', '--raw', '--subdir', 'DAGS_FOLDER/airQuality.py', '--cfg-path', '/tmp/tmpipsw8r2c']
+[2023-12-17T11:18:38.475+0000] {standard_task_runner.py:85} INFO - Job 337: Subtask Transform
+[2023-12-17T11:18:38.649+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-06T04:00:00+00:00/task_id=Transform permission to 509
+[2023-12-17T11:18:38.651+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-06T04:00:00+00:00/task_id=Transform permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-06T04:00:00+00:00/task_id=Transform'
+[2023-12-17T11:18:38.666+0000] {task_command.py:416} INFO - Running <TaskInstance: air_quality.Transform scheduled__2023-12-06T04:00:00+00:00 [running]> on host 1a58977f5573
+[2023-12-17T11:18:39.243+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ghifari' AIRFLOW_CTX_DAG_ID='air_quality' AIRFLOW_CTX_TASK_ID='Transform' AIRFLOW_CTX_EXECUTION_DATE='2023-12-06T04:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-06T04:00:00+00:00'
+[2023-12-17T11:18:40.981+0000] {python.py:194} INFO - Done. Returned value was:       city country unit  last_value       lat         lng
+0  Jakarta      ID   o3      -0.999 -6.182536  106.834236
+[2023-12-17T11:18:41.113+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=air_quality, task_id=Transform, execution_date=20231206T040000, start_date=20231217T111838, end_date=20231217T111841
+[2023-12-17T11:18:41.303+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-17T11:18:41.431+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-12-17T12:18:34.080+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-06T04:00:00+00:00/task_id=Transform permission to 509
+[2023-12-17T12:18:34.084+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-06T04:00:00+00:00/task_id=Transform permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-06T04:00:00+00:00/task_id=Transform'
+[2023-12-17T12:18:34.218+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-06T04:00:00+00:00/task_id=Transform permission to 509
+[2023-12-17T12:18:34.221+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-06T04:00:00+00:00/task_id=Transform permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-06T04:00:00+00:00/task_id=Transform'
+[2023-12-17T12:18:34.387+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: air_quality.Transform scheduled__2023-12-06T04:00:00+00:00 [queued]>
+[2023-12-17T12:18:34.430+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: air_quality.Transform scheduled__2023-12-06T04:00:00+00:00 [queued]>
+[2023-12-17T12:18:34.432+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-12-17T12:18:34.485+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): Transform> on 2023-12-06 04:00:00+00:00
+[2023-12-17T12:18:34.492+0000] {standard_task_runner.py:57} INFO - Started process 4349 to run task
+[2023-12-17T12:18:34.499+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'air_quality', 'Transform', 'scheduled__2023-12-06T04:00:00+00:00', '--job-id', '654', '--raw', '--subdir', 'DAGS_FOLDER/airQuality.py', '--cfg-path', '/tmp/tmpok_t0xtz']
+[2023-12-17T12:18:34.505+0000] {standard_task_runner.py:85} INFO - Job 654: Subtask Transform
+[2023-12-17T12:18:34.629+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-06T04:00:00+00:00/task_id=Transform permission to 509
+[2023-12-17T12:18:34.630+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-06T04:00:00+00:00/task_id=Transform permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-06T04:00:00+00:00/task_id=Transform'
+[2023-12-17T12:18:34.634+0000] {task_command.py:416} INFO - Running <TaskInstance: air_quality.Transform scheduled__2023-12-06T04:00:00+00:00 [running]> on host 1a58977f5573
+[2023-12-17T12:18:34.834+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ghifari' AIRFLOW_CTX_DAG_ID='air_quality' AIRFLOW_CTX_TASK_ID='Transform' AIRFLOW_CTX_EXECUTION_DATE='2023-12-06T04:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-06T04:00:00+00:00'
+[2023-12-17T12:18:35.962+0000] {python.py:194} INFO - Done. Returned value was:       city country  unit  last_value       lat         lng
+0  Jakarta      ID  pm25      -999.0 -6.182536  106.834236
+[2023-12-17T12:18:36.015+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=air_quality, task_id=Transform, execution_date=20231206T040000, start_date=20231217T121834, end_date=20231217T121836
+[2023-12-17T12:18:36.087+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-17T12:18:36.145+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-12-28T16:51:43.701+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-06T04:00:00+00:00/task_id=Transform permission to 509
+[2023-12-28T16:51:43.704+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-06T04:00:00+00:00/task_id=Transform permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-06T04:00:00+00:00/task_id=Transform'
+[2023-12-28T16:51:43.801+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-06T04:00:00+00:00/task_id=Transform permission to 509
+[2023-12-28T16:51:43.802+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-06T04:00:00+00:00/task_id=Transform permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-06T04:00:00+00:00/task_id=Transform'
+[2023-12-28T16:51:43.914+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: air_quality.Transform scheduled__2023-12-06T04:00:00+00:00 [queued]>
+[2023-12-28T16:51:43.959+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: air_quality.Transform scheduled__2023-12-06T04:00:00+00:00 [queued]>
+[2023-12-28T16:51:43.960+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-12-28T16:51:44.008+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): Transform> on 2023-12-06 04:00:00+00:00
+[2023-12-28T16:51:44.021+0000] {standard_task_runner.py:57} INFO - Started process 194 to run task
+[2023-12-28T16:51:44.029+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'air_quality', 'Transform', 'scheduled__2023-12-06T04:00:00+00:00', '--job-id', '850', '--raw', '--subdir', 'DAGS_FOLDER/airQuality.py', '--cfg-path', '/tmp/tmpxelw8myb']
+[2023-12-28T16:51:44.038+0000] {standard_task_runner.py:85} INFO - Job 850: Subtask Transform
+[2023-12-28T16:51:44.225+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-06T04:00:00+00:00/task_id=Transform permission to 509
+[2023-12-28T16:51:44.227+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-06T04:00:00+00:00/task_id=Transform permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-06T04:00:00+00:00/task_id=Transform'
+[2023-12-28T16:51:44.233+0000] {task_command.py:416} INFO - Running <TaskInstance: air_quality.Transform scheduled__2023-12-06T04:00:00+00:00 [running]> on host d67dd4682ccf
+[2023-12-28T16:51:44.500+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ghifari' AIRFLOW_CTX_DAG_ID='air_quality' AIRFLOW_CTX_TASK_ID='Transform' AIRFLOW_CTX_EXECUTION_DATE='2023-12-06T04:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-06T04:00:00+00:00'
+[2023-12-28T16:51:46.181+0000] {python.py:194} INFO - Done. Returned value was:       city country unit  last_value       lat         lng
+0  Jakarta      ID   o3      -0.999 -6.182536  106.834236
+[2023-12-28T16:51:46.363+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=air_quality, task_id=Transform, execution_date=20231206T040000, start_date=20231228T165143, end_date=20231228T165146
+[2023-12-28T16:51:46.545+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-28T16:51:46.675+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-12-28T16:54:23.104+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-06T04:00:00+00:00/task_id=Transform permission to 509
+[2023-12-28T16:54:23.132+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-06T04:00:00+00:00/task_id=Transform permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-06T04:00:00+00:00/task_id=Transform'
+[2023-12-28T16:54:23.300+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-06T04:00:00+00:00/task_id=Transform permission to 509
+[2023-12-28T16:54:23.303+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-06T04:00:00+00:00/task_id=Transform permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-06T04:00:00+00:00/task_id=Transform'
+[2023-12-28T16:54:23.464+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: air_quality.Transform scheduled__2023-12-06T04:00:00+00:00 [queued]>
+[2023-12-28T16:54:23.504+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: air_quality.Transform scheduled__2023-12-06T04:00:00+00:00 [queued]>
+[2023-12-28T16:54:23.506+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-12-28T16:54:23.598+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): Transform> on 2023-12-06 04:00:00+00:00
+[2023-12-28T16:54:23.620+0000] {standard_task_runner.py:57} INFO - Started process 910 to run task
+[2023-12-28T16:54:23.629+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'air_quality', 'Transform', 'scheduled__2023-12-06T04:00:00+00:00', '--job-id', '1059', '--raw', '--subdir', 'DAGS_FOLDER/airQuality.py', '--cfg-path', '/tmp/tmppm0xnj9p']
+[2023-12-28T16:54:23.635+0000] {standard_task_runner.py:85} INFO - Job 1059: Subtask Transform
+[2023-12-28T16:54:23.905+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-06T04:00:00+00:00/task_id=Transform permission to 509
+[2023-12-28T16:54:23.907+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-06T04:00:00+00:00/task_id=Transform permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-06T04:00:00+00:00/task_id=Transform'
+[2023-12-28T16:54:23.912+0000] {task_command.py:416} INFO - Running <TaskInstance: air_quality.Transform scheduled__2023-12-06T04:00:00+00:00 [running]> on host d67dd4682ccf
+[2023-12-28T16:54:24.329+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ghifari' AIRFLOW_CTX_DAG_ID='air_quality' AIRFLOW_CTX_TASK_ID='Transform' AIRFLOW_CTX_EXECUTION_DATE='2023-12-06T04:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-06T04:00:00+00:00'
+[2023-12-28T16:54:26.527+0000] {python.py:194} INFO - Done. Returned value was:       city country unit  last_value       lat         lng
+0  Jakarta      ID   o3      -0.999 -6.182536  106.834236
+[2023-12-28T16:54:26.687+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=air_quality, task_id=Transform, execution_date=20231206T040000, start_date=20231228T165423, end_date=20231228T165426
+[2023-12-28T16:54:27.175+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-28T16:54:27.414+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check

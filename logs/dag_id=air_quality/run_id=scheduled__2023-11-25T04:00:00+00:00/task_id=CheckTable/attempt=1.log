@@ -1,0 +1,66 @@
+[2023-12-17T11:18:38.542+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-11-25T04:00:00+00:00/task_id=CheckTable permission to 509
+[2023-12-17T11:18:38.545+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-11-25T04:00:00+00:00/task_id=CheckTable permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-11-25T04:00:00+00:00/task_id=CheckTable'
+[2023-12-17T11:18:38.734+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-11-25T04:00:00+00:00/task_id=CheckTable permission to 509
+[2023-12-17T11:18:38.736+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-11-25T04:00:00+00:00/task_id=CheckTable permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-11-25T04:00:00+00:00/task_id=CheckTable'
+[2023-12-17T11:18:39.015+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: air_quality.CheckTable scheduled__2023-11-25T04:00:00+00:00 [queued]>
+[2023-12-17T11:18:39.060+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: air_quality.CheckTable scheduled__2023-11-25T04:00:00+00:00 [queued]>
+[2023-12-17T11:18:39.083+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-12-17T11:18:39.598+0000] {taskinstance.py:1382} INFO - Executing <Task(BranchPythonOperator): CheckTable> on 2023-11-25 04:00:00+00:00
+[2023-12-17T11:18:39.614+0000] {standard_task_runner.py:57} INFO - Started process 2091 to run task
+[2023-12-17T11:18:39.630+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'air_quality', 'CheckTable', 'scheduled__2023-11-25T04:00:00+00:00', '--job-id', '341', '--raw', '--subdir', 'DAGS_FOLDER/airQuality.py', '--cfg-path', '/tmp/tmps6rvnj72']
+[2023-12-17T11:18:39.633+0000] {standard_task_runner.py:85} INFO - Job 341: Subtask CheckTable
+[2023-12-17T11:18:39.871+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-11-25T04:00:00+00:00/task_id=CheckTable permission to 509
+[2023-12-17T11:18:39.882+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-11-25T04:00:00+00:00/task_id=CheckTable permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-11-25T04:00:00+00:00/task_id=CheckTable'
+[2023-12-17T11:18:39.885+0000] {task_command.py:416} INFO - Running <TaskInstance: air_quality.CheckTable scheduled__2023-11-25T04:00:00+00:00 [running]> on host 1a58977f5573
+[2023-12-17T11:18:40.156+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ghifari' AIRFLOW_CTX_DAG_ID='air_quality' AIRFLOW_CTX_TASK_ID='CheckTable' AIRFLOW_CTX_EXECUTION_DATE='2023-11-25T04:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-25T04:00:00+00:00'
+[2023-12-17T11:18:40.190+0000] {airQuality.py:204} INFO - Table Created: 
+        CREATE TABLE air_quality (
+            id serial primary key, 
+            city varchar(250),
+            country varchar(250), 
+            unit varchar(20), 
+            last_value float8, 
+            lat float8,
+            lng float8
+        )
+    
+[2023-12-17T11:18:40.191+0000] {python.py:194} INFO - Done. Returned value was: Insert_Data
+[2023-12-17T11:18:40.193+0000] {python.py:227} INFO - Branch callable return Insert_Data
+[2023-12-17T11:18:40.194+0000] {skipmixin.py:173} INFO - Following branch Insert_Data
+[2023-12-17T11:18:40.264+0000] {skipmixin.py:239} INFO - Skipping tasks []
+[2023-12-17T11:18:40.467+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=air_quality, task_id=CheckTable, execution_date=20231125T040000, start_date=20231217T111839, end_date=20231217T111840
+[2023-12-17T11:18:40.614+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-17T11:18:40.782+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-12-28T16:54:24.280+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-11-25T04:00:00+00:00/task_id=CheckTable permission to 509
+[2023-12-28T16:54:24.292+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-11-25T04:00:00+00:00/task_id=CheckTable permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-11-25T04:00:00+00:00/task_id=CheckTable'
+[2023-12-28T16:54:24.422+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-11-25T04:00:00+00:00/task_id=CheckTable permission to 509
+[2023-12-28T16:54:24.424+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-11-25T04:00:00+00:00/task_id=CheckTable permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-11-25T04:00:00+00:00/task_id=CheckTable'
+[2023-12-28T16:54:24.549+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: air_quality.CheckTable scheduled__2023-11-25T04:00:00+00:00 [queued]>
+[2023-12-28T16:54:24.638+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: air_quality.CheckTable scheduled__2023-11-25T04:00:00+00:00 [queued]>
+[2023-12-28T16:54:24.650+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-12-28T16:54:24.717+0000] {taskinstance.py:1382} INFO - Executing <Task(BranchPythonOperator): CheckTable> on 2023-11-25 04:00:00+00:00
+[2023-12-28T16:54:24.727+0000] {standard_task_runner.py:57} INFO - Started process 921 to run task
+[2023-12-28T16:54:24.761+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'air_quality', 'CheckTable', 'scheduled__2023-11-25T04:00:00+00:00', '--job-id', '1064', '--raw', '--subdir', 'DAGS_FOLDER/airQuality.py', '--cfg-path', '/tmp/tmp3qt_z3s5']
+[2023-12-28T16:54:24.789+0000] {standard_task_runner.py:85} INFO - Job 1064: Subtask CheckTable
+[2023-12-28T16:54:25.070+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-11-25T04:00:00+00:00/task_id=CheckTable permission to 509
+[2023-12-28T16:54:25.073+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-11-25T04:00:00+00:00/task_id=CheckTable permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-11-25T04:00:00+00:00/task_id=CheckTable'
+[2023-12-28T16:54:25.101+0000] {task_command.py:416} INFO - Running <TaskInstance: air_quality.CheckTable scheduled__2023-11-25T04:00:00+00:00 [running]> on host d67dd4682ccf
+[2023-12-28T16:54:25.520+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ghifari' AIRFLOW_CTX_DAG_ID='air_quality' AIRFLOW_CTX_TASK_ID='CheckTable' AIRFLOW_CTX_EXECUTION_DATE='2023-11-25T04:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-25T04:00:00+00:00'
+[2023-12-28T16:54:25.575+0000] {airQuality.py:183} INFO - Table Created: 
+        CREATE TABLE air_quality (
+            id serial primary key, 
+            city varchar(250),
+            country varchar(250), 
+            unit varchar(20), 
+            last_value float8, 
+            lat float8,
+            lng float8
+        )
+    
+[2023-12-28T16:54:25.578+0000] {python.py:194} INFO - Done. Returned value was: Insert_Data
+[2023-12-28T16:54:25.587+0000] {python.py:227} INFO - Branch callable return Insert_Data
+[2023-12-28T16:54:25.591+0000] {skipmixin.py:173} INFO - Following branch Insert_Data
+[2023-12-28T16:54:25.645+0000] {skipmixin.py:239} INFO - Skipping tasks []
+[2023-12-28T16:54:25.869+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=air_quality, task_id=CheckTable, execution_date=20231125T040000, start_date=20231228T165424, end_date=20231228T165425
+[2023-12-28T16:54:26.063+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-28T16:54:26.247+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check

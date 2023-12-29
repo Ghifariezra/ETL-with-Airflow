@@ -1,0 +1,28 @@
+[2023-12-14T14:35:20.734+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-14T14:30:18.755192+00:00/task_id=ETL permission to 509
+[2023-12-14T14:35:20.736+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-14T14:30:18.755192+00:00/task_id=ETL permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-14T14:30:18.755192+00:00/task_id=ETL'
+[2023-12-14T14:35:20.780+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-14T14:30:18.755192+00:00/task_id=ETL permission to 509
+[2023-12-14T14:35:20.781+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-14T14:30:18.755192+00:00/task_id=ETL permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-14T14:30:18.755192+00:00/task_id=ETL'
+[2023-12-14T14:35:20.834+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: air_quality.ETL manual__2023-12-14T14:30:18.755192+00:00 [queued]>
+[2023-12-14T14:35:20.850+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: air_quality.ETL manual__2023-12-14T14:30:18.755192+00:00 [queued]>
+[2023-12-14T14:35:20.851+0000] {taskinstance.py:1361} INFO - Starting attempt 2 of 2
+[2023-12-14T14:35:20.876+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): ETL> on 2023-12-14 14:30:18.755192+00:00
+[2023-12-14T14:35:20.882+0000] {standard_task_runner.py:57} INFO - Started process 2724 to run task
+[2023-12-14T14:35:20.886+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'air_quality', 'ETL', 'manual__2023-12-14T14:30:18.755192+00:00', '--job-id', '46', '--raw', '--subdir', 'DAGS_FOLDER/airQuality.py', '--cfg-path', '/tmp/tmpn10penl7']
+[2023-12-14T14:35:20.888+0000] {standard_task_runner.py:85} INFO - Job 46: Subtask ETL
+[2023-12-14T14:35:20.976+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-14T14:30:18.755192+00:00/task_id=ETL permission to 509
+[2023-12-14T14:35:20.977+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-14T14:30:18.755192+00:00/task_id=ETL permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-14T14:30:18.755192+00:00/task_id=ETL'
+[2023-12-14T14:35:20.988+0000] {task_command.py:416} INFO - Running <TaskInstance: air_quality.ETL manual__2023-12-14T14:30:18.755192+00:00 [running]> on host d739bc9bef06
+[2023-12-14T14:35:21.152+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ghifari' AIRFLOW_CTX_DAG_ID='air_quality' AIRFLOW_CTX_TASK_ID='ETL' AIRFLOW_CTX_EXECUTION_DATE='2023-12-14T14:30:18.755192+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-12-14T14:30:18.755192+00:00'
+[2023-12-14T14:35:21.155+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 190, in execute
+    self.op_kwargs = self.determine_kwargs(context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 201, in determine_kwargs
+    return KeywordParameters.determine(self.python_callable, self.op_args, context).unpacking()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/utils/operator_helpers.py", line 163, in determine
+    raise ValueError(f"The key {name!r} in args is a part of kwargs and therefore reserved.")
+ValueError: The key 'params' in args is a part of kwargs and therefore reserved.
+[2023-12-14T14:35:21.173+0000] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=air_quality, task_id=ETL, execution_date=20231214T143018, start_date=20231214T143520, end_date=20231214T143521
+[2023-12-14T14:35:21.192+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 46 for task ETL (The key 'params' in args is a part of kwargs and therefore reserved.; 2724)
+[2023-12-14T14:35:21.221+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-12-14T14:35:21.267+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

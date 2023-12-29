@@ -1,0 +1,217 @@
+[2023-12-24T16:16:53.307+0000] {processor.py:157} INFO - Started process (PID=34) to work on /opt/airflow/dags/airQuality.py
+[2023-12-24T16:16:53.312+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/airQuality.py for tasks to queue
+[2023-12-24T16:16:53.329+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:16:53.328+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:16:53.575+0000] {processor.py:839} INFO - DAG(s) dict_keys(['air_quality']) retrieved from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:16:53.726+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:16:53.726+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-24T16:16:53.814+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:16:53.814+0000] {dag.py:3722} INFO - Setting next_dagrun for air_quality to None, run_after=None
+[2023-12-24T16:16:53.876+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airQuality.py took 0.593 seconds
+[2023-12-24T16:17:24.167+0000] {processor.py:157} INFO - Started process (PID=42) to work on /opt/airflow/dags/airQuality.py
+[2023-12-24T16:17:24.170+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/airQuality.py for tasks to queue
+[2023-12-24T16:17:24.173+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:17:24.173+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:17:24.267+0000] {processor.py:839} INFO - DAG(s) dict_keys(['air_quality']) retrieved from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:17:24.293+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:17:24.293+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-24T16:17:24.364+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:17:24.364+0000] {dag.py:3722} INFO - Setting next_dagrun for air_quality to None, run_after=None
+[2023-12-24T16:17:24.398+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airQuality.py took 0.237 seconds
+[2023-12-24T16:23:00.421+0000] {processor.py:157} INFO - Started process (PID=34) to work on /opt/airflow/dags/airQuality.py
+[2023-12-24T16:23:00.423+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/airQuality.py for tasks to queue
+[2023-12-24T16:23:00.427+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:23:00.427+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:23:00.513+0000] {processor.py:839} INFO - DAG(s) dict_keys(['air_quality']) retrieved from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:23:00.575+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:23:00.574+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-24T16:23:00.652+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:23:00.652+0000] {dag.py:3722} INFO - Setting next_dagrun for air_quality to None, run_after=None
+[2023-12-24T16:23:00.709+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airQuality.py took 0.295 seconds
+[2023-12-24T16:23:30.848+0000] {processor.py:157} INFO - Started process (PID=42) to work on /opt/airflow/dags/airQuality.py
+[2023-12-24T16:23:30.850+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/airQuality.py for tasks to queue
+[2023-12-24T16:23:30.854+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:23:30.854+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:23:30.914+0000] {processor.py:839} INFO - DAG(s) dict_keys(['air_quality']) retrieved from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:23:30.934+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:23:30.934+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-24T16:23:30.961+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:23:30.960+0000] {dag.py:3722} INFO - Setting next_dagrun for air_quality to None, run_after=None
+[2023-12-24T16:23:30.992+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airQuality.py took 0.148 seconds
+[2023-12-24T16:24:01.228+0000] {processor.py:157} INFO - Started process (PID=50) to work on /opt/airflow/dags/airQuality.py
+[2023-12-24T16:24:01.229+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/airQuality.py for tasks to queue
+[2023-12-24T16:24:01.232+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:24:01.231+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:24:01.289+0000] {processor.py:839} INFO - DAG(s) dict_keys(['air_quality']) retrieved from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:24:01.312+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:24:01.311+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-24T16:24:01.341+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:24:01.341+0000] {dag.py:3722} INFO - Setting next_dagrun for air_quality to None, run_after=None
+[2023-12-24T16:24:01.369+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airQuality.py took 0.144 seconds
+[2023-12-24T16:24:31.752+0000] {processor.py:157} INFO - Started process (PID=58) to work on /opt/airflow/dags/airQuality.py
+[2023-12-24T16:24:31.753+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/airQuality.py for tasks to queue
+[2023-12-24T16:24:31.756+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:24:31.756+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:24:31.815+0000] {processor.py:839} INFO - DAG(s) dict_keys(['air_quality']) retrieved from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:24:31.837+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:24:31.837+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-24T16:24:31.871+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:24:31.871+0000] {dag.py:3722} INFO - Setting next_dagrun for air_quality to None, run_after=None
+[2023-12-24T16:24:31.920+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airQuality.py took 0.171 seconds
+[2023-12-24T16:25:02.180+0000] {processor.py:157} INFO - Started process (PID=66) to work on /opt/airflow/dags/airQuality.py
+[2023-12-24T16:25:02.182+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/airQuality.py for tasks to queue
+[2023-12-24T16:25:02.186+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:25:02.185+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:25:02.284+0000] {processor.py:839} INFO - DAG(s) dict_keys(['air_quality']) retrieved from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:25:02.308+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:25:02.308+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-24T16:25:02.336+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:25:02.336+0000] {dag.py:3722} INFO - Setting next_dagrun for air_quality to None, run_after=None
+[2023-12-24T16:25:02.360+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airQuality.py took 0.185 seconds
+[2023-12-24T16:25:32.741+0000] {processor.py:157} INFO - Started process (PID=74) to work on /opt/airflow/dags/airQuality.py
+[2023-12-24T16:25:32.743+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/airQuality.py for tasks to queue
+[2023-12-24T16:25:32.746+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:25:32.746+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:25:32.811+0000] {processor.py:839} INFO - DAG(s) dict_keys(['air_quality']) retrieved from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:25:32.832+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:25:32.831+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-24T16:25:32.878+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:25:32.878+0000] {dag.py:3722} INFO - Setting next_dagrun for air_quality to None, run_after=None
+[2023-12-24T16:25:32.928+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airQuality.py took 0.191 seconds
+[2023-12-24T16:26:03.150+0000] {processor.py:157} INFO - Started process (PID=82) to work on /opt/airflow/dags/airQuality.py
+[2023-12-24T16:26:03.152+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/airQuality.py for tasks to queue
+[2023-12-24T16:26:03.157+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:26:03.156+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:26:03.238+0000] {processor.py:839} INFO - DAG(s) dict_keys(['air_quality']) retrieved from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:26:03.265+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:26:03.264+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-24T16:26:03.291+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:26:03.290+0000] {dag.py:3722} INFO - Setting next_dagrun for air_quality to None, run_after=None
+[2023-12-24T16:26:03.328+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airQuality.py took 0.186 seconds
+[2023-12-24T16:26:33.723+0000] {processor.py:157} INFO - Started process (PID=90) to work on /opt/airflow/dags/airQuality.py
+[2023-12-24T16:26:33.725+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/airQuality.py for tasks to queue
+[2023-12-24T16:26:33.727+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:26:33.727+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:26:33.787+0000] {processor.py:839} INFO - DAG(s) dict_keys(['air_quality']) retrieved from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:26:33.807+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:26:33.807+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-24T16:26:33.834+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:26:33.834+0000] {dag.py:3722} INFO - Setting next_dagrun for air_quality to None, run_after=None
+[2023-12-24T16:26:33.860+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airQuality.py took 0.140 seconds
+[2023-12-24T16:27:04.116+0000] {processor.py:157} INFO - Started process (PID=98) to work on /opt/airflow/dags/airQuality.py
+[2023-12-24T16:27:04.117+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/airQuality.py for tasks to queue
+[2023-12-24T16:27:04.122+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:27:04.122+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:27:04.203+0000] {processor.py:839} INFO - DAG(s) dict_keys(['air_quality']) retrieved from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:27:04.245+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:27:04.244+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-24T16:27:04.308+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:27:04.308+0000] {dag.py:3722} INFO - Setting next_dagrun for air_quality to None, run_after=None
+[2023-12-24T16:27:04.341+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airQuality.py took 0.231 seconds
+[2023-12-24T16:27:34.593+0000] {processor.py:157} INFO - Started process (PID=106) to work on /opt/airflow/dags/airQuality.py
+[2023-12-24T16:27:34.594+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/airQuality.py for tasks to queue
+[2023-12-24T16:27:34.598+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:27:34.597+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:27:34.671+0000] {processor.py:839} INFO - DAG(s) dict_keys(['air_quality']) retrieved from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:27:34.697+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:27:34.697+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-24T16:27:34.733+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:27:34.733+0000] {dag.py:3722} INFO - Setting next_dagrun for air_quality to None, run_after=None
+[2023-12-24T16:27:34.766+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airQuality.py took 0.178 seconds
+[2023-12-24T16:28:05.206+0000] {processor.py:157} INFO - Started process (PID=114) to work on /opt/airflow/dags/airQuality.py
+[2023-12-24T16:28:05.207+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/airQuality.py for tasks to queue
+[2023-12-24T16:28:05.210+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:28:05.210+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:28:05.271+0000] {processor.py:839} INFO - DAG(s) dict_keys(['air_quality']) retrieved from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:28:05.294+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:28:05.293+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-24T16:28:05.322+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:28:05.322+0000] {dag.py:3722} INFO - Setting next_dagrun for air_quality to None, run_after=None
+[2023-12-24T16:28:05.375+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airQuality.py took 0.172 seconds
+[2023-12-24T16:28:35.648+0000] {processor.py:157} INFO - Started process (PID=122) to work on /opt/airflow/dags/airQuality.py
+[2023-12-24T16:28:35.649+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/airQuality.py for tasks to queue
+[2023-12-24T16:28:35.653+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:28:35.652+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:28:35.714+0000] {processor.py:839} INFO - DAG(s) dict_keys(['air_quality']) retrieved from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:28:35.734+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:28:35.734+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-24T16:28:35.761+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:28:35.761+0000] {dag.py:3722} INFO - Setting next_dagrun for air_quality to None, run_after=None
+[2023-12-24T16:28:35.799+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airQuality.py took 0.156 seconds
+[2023-12-24T16:29:06.102+0000] {processor.py:157} INFO - Started process (PID=130) to work on /opt/airflow/dags/airQuality.py
+[2023-12-24T16:29:06.103+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/airQuality.py for tasks to queue
+[2023-12-24T16:29:06.107+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:29:06.107+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:29:06.192+0000] {processor.py:839} INFO - DAG(s) dict_keys(['air_quality']) retrieved from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:29:06.214+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:29:06.214+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-24T16:29:06.250+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:29:06.250+0000] {dag.py:3722} INFO - Setting next_dagrun for air_quality to None, run_after=None
+[2023-12-24T16:29:06.299+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airQuality.py took 0.204 seconds
+[2023-12-24T16:29:36.524+0000] {processor.py:157} INFO - Started process (PID=138) to work on /opt/airflow/dags/airQuality.py
+[2023-12-24T16:29:36.525+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/airQuality.py for tasks to queue
+[2023-12-24T16:29:36.528+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:29:36.527+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:29:36.628+0000] {processor.py:839} INFO - DAG(s) dict_keys(['air_quality']) retrieved from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:29:36.658+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:29:36.657+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-24T16:29:36.684+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:29:36.684+0000] {dag.py:3722} INFO - Setting next_dagrun for air_quality to None, run_after=None
+[2023-12-24T16:29:36.711+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airQuality.py took 0.191 seconds
+[2023-12-24T16:30:07.155+0000] {processor.py:157} INFO - Started process (PID=146) to work on /opt/airflow/dags/airQuality.py
+[2023-12-24T16:30:07.156+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/airQuality.py for tasks to queue
+[2023-12-24T16:30:07.160+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:30:07.160+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:30:07.251+0000] {processor.py:839} INFO - DAG(s) dict_keys(['air_quality']) retrieved from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:30:07.278+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:30:07.278+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-24T16:30:07.310+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:30:07.309+0000] {dag.py:3722} INFO - Setting next_dagrun for air_quality to None, run_after=None
+[2023-12-24T16:30:07.336+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airQuality.py took 0.185 seconds
+[2023-12-24T16:30:37.703+0000] {processor.py:157} INFO - Started process (PID=154) to work on /opt/airflow/dags/airQuality.py
+[2023-12-24T16:30:37.707+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/airQuality.py for tasks to queue
+[2023-12-24T16:30:37.720+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:30:37.718+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:30:37.817+0000] {processor.py:839} INFO - DAG(s) dict_keys(['air_quality']) retrieved from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:30:37.844+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:30:37.844+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-24T16:30:37.879+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:30:37.879+0000] {dag.py:3722} INFO - Setting next_dagrun for air_quality to None, run_after=None
+[2023-12-24T16:30:37.909+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airQuality.py took 0.224 seconds
+[2023-12-24T16:31:08.179+0000] {processor.py:157} INFO - Started process (PID=162) to work on /opt/airflow/dags/airQuality.py
+[2023-12-24T16:31:08.180+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/airQuality.py for tasks to queue
+[2023-12-24T16:31:08.183+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:31:08.183+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:31:08.246+0000] {processor.py:839} INFO - DAG(s) dict_keys(['air_quality']) retrieved from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:31:08.277+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:31:08.277+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-24T16:31:08.315+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:31:08.314+0000] {dag.py:3722} INFO - Setting next_dagrun for air_quality to None, run_after=None
+[2023-12-24T16:31:08.344+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airQuality.py took 0.171 seconds
+[2023-12-24T16:31:38.691+0000] {processor.py:157} INFO - Started process (PID=170) to work on /opt/airflow/dags/airQuality.py
+[2023-12-24T16:31:38.692+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/airQuality.py for tasks to queue
+[2023-12-24T16:31:38.697+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:31:38.697+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:31:38.781+0000] {processor.py:839} INFO - DAG(s) dict_keys(['air_quality']) retrieved from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:31:38.803+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:31:38.803+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-24T16:31:38.832+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:31:38.831+0000] {dag.py:3722} INFO - Setting next_dagrun for air_quality to None, run_after=None
+[2023-12-24T16:31:38.858+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airQuality.py took 0.172 seconds
+[2023-12-24T16:32:08.997+0000] {processor.py:157} INFO - Started process (PID=178) to work on /opt/airflow/dags/airQuality.py
+[2023-12-24T16:32:08.999+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/airQuality.py for tasks to queue
+[2023-12-24T16:32:09.002+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:32:09.001+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:32:09.063+0000] {processor.py:839} INFO - DAG(s) dict_keys(['air_quality']) retrieved from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:32:09.083+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:32:09.083+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-24T16:32:09.109+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:32:09.109+0000] {dag.py:3722} INFO - Setting next_dagrun for air_quality to None, run_after=None
+[2023-12-24T16:32:09.141+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airQuality.py took 0.149 seconds
+[2023-12-24T16:32:39.355+0000] {processor.py:157} INFO - Started process (PID=186) to work on /opt/airflow/dags/airQuality.py
+[2023-12-24T16:32:39.357+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/airQuality.py for tasks to queue
+[2023-12-24T16:32:39.360+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:32:39.359+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:32:39.458+0000] {processor.py:839} INFO - DAG(s) dict_keys(['air_quality']) retrieved from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:32:39.489+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:32:39.489+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-24T16:32:39.523+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:32:39.523+0000] {dag.py:3722} INFO - Setting next_dagrun for air_quality to None, run_after=None
+[2023-12-24T16:32:39.561+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airQuality.py took 0.214 seconds
+[2023-12-24T16:33:09.844+0000] {processor.py:157} INFO - Started process (PID=194) to work on /opt/airflow/dags/airQuality.py
+[2023-12-24T16:33:09.847+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/airQuality.py for tasks to queue
+[2023-12-24T16:33:09.856+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:33:09.856+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:33:09.958+0000] {processor.py:839} INFO - DAG(s) dict_keys(['air_quality']) retrieved from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:33:09.981+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:33:09.981+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-24T16:33:10.015+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:33:10.015+0000] {dag.py:3722} INFO - Setting next_dagrun for air_quality to None, run_after=None
+[2023-12-24T16:33:10.046+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airQuality.py took 0.210 seconds
+[2023-12-24T16:33:40.363+0000] {processor.py:157} INFO - Started process (PID=202) to work on /opt/airflow/dags/airQuality.py
+[2023-12-24T16:33:40.367+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/airQuality.py for tasks to queue
+[2023-12-24T16:33:40.388+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:33:40.386+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:33:40.560+0000] {processor.py:839} INFO - DAG(s) dict_keys(['air_quality']) retrieved from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:33:40.589+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:33:40.589+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-24T16:33:40.624+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:33:40.624+0000] {dag.py:3722} INFO - Setting next_dagrun for air_quality to None, run_after=None
+[2023-12-24T16:33:40.653+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airQuality.py took 0.312 seconds
+[2023-12-24T16:34:10.763+0000] {processor.py:157} INFO - Started process (PID=210) to work on /opt/airflow/dags/airQuality.py
+[2023-12-24T16:34:10.764+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/airQuality.py for tasks to queue
+[2023-12-24T16:34:10.767+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:34:10.767+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:34:10.824+0000] {processor.py:839} INFO - DAG(s) dict_keys(['air_quality']) retrieved from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:34:10.847+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:34:10.847+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-24T16:34:10.878+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:34:10.878+0000] {dag.py:3722} INFO - Setting next_dagrun for air_quality to None, run_after=None
+[2023-12-24T16:34:10.905+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airQuality.py took 0.146 seconds
+[2023-12-24T16:34:41.207+0000] {processor.py:157} INFO - Started process (PID=218) to work on /opt/airflow/dags/airQuality.py
+[2023-12-24T16:34:41.211+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/airQuality.py for tasks to queue
+[2023-12-24T16:34:41.223+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:34:41.221+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:34:41.421+0000] {processor.py:839} INFO - DAG(s) dict_keys(['air_quality']) retrieved from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:34:41.451+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:34:41.451+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-24T16:34:41.488+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:34:41.488+0000] {dag.py:3722} INFO - Setting next_dagrun for air_quality to None, run_after=None
+[2023-12-24T16:34:41.511+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airQuality.py took 0.318 seconds
+[2023-12-24T16:35:11.611+0000] {processor.py:157} INFO - Started process (PID=226) to work on /opt/airflow/dags/airQuality.py
+[2023-12-24T16:35:11.612+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/airQuality.py for tasks to queue
+[2023-12-24T16:35:11.615+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:35:11.615+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:35:11.684+0000] {processor.py:839} INFO - DAG(s) dict_keys(['air_quality']) retrieved from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:35:11.710+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:35:11.710+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-24T16:35:11.738+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:35:11.738+0000] {dag.py:3722} INFO - Setting next_dagrun for air_quality to None, run_after=None
+[2023-12-24T16:35:11.763+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airQuality.py took 0.156 seconds
+[2023-12-24T16:35:42.059+0000] {processor.py:157} INFO - Started process (PID=234) to work on /opt/airflow/dags/airQuality.py
+[2023-12-24T16:35:42.062+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/airQuality.py for tasks to queue
+[2023-12-24T16:35:42.068+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:35:42.067+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:35:42.193+0000] {processor.py:839} INFO - DAG(s) dict_keys(['air_quality']) retrieved from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:35:42.217+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:35:42.216+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-24T16:35:42.243+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:35:42.242+0000] {dag.py:3722} INFO - Setting next_dagrun for air_quality to None, run_after=None
+[2023-12-24T16:35:42.276+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airQuality.py took 0.225 seconds
+[2023-12-24T16:36:12.665+0000] {processor.py:157} INFO - Started process (PID=242) to work on /opt/airflow/dags/airQuality.py
+[2023-12-24T16:36:12.671+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/airQuality.py for tasks to queue
+[2023-12-24T16:36:12.682+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:36:12.681+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:36:12.803+0000] {processor.py:839} INFO - DAG(s) dict_keys(['air_quality']) retrieved from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:36:12.833+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:36:12.833+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-24T16:36:12.871+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:36:12.871+0000] {dag.py:3722} INFO - Setting next_dagrun for air_quality to None, run_after=None
+[2023-12-24T16:36:12.895+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airQuality.py took 0.250 seconds
+[2023-12-24T16:36:42.943+0000] {processor.py:157} INFO - Started process (PID=250) to work on /opt/airflow/dags/airQuality.py
+[2023-12-24T16:36:42.945+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/airQuality.py for tasks to queue
+[2023-12-24T16:36:42.947+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:36:42.947+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:36:42.999+0000] {processor.py:839} INFO - DAG(s) dict_keys(['air_quality']) retrieved from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:36:43.019+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:36:43.018+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-24T16:36:43.044+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:36:43.043+0000] {dag.py:3722} INFO - Setting next_dagrun for air_quality to None, run_after=None
+[2023-12-24T16:36:43.070+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airQuality.py took 0.131 seconds
+[2023-12-24T16:37:13.206+0000] {processor.py:157} INFO - Started process (PID=258) to work on /opt/airflow/dags/airQuality.py
+[2023-12-24T16:37:13.207+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/airQuality.py for tasks to queue
+[2023-12-24T16:37:13.212+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:37:13.211+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:37:13.308+0000] {processor.py:839} INFO - DAG(s) dict_keys(['air_quality']) retrieved from /opt/airflow/dags/airQuality.py
+[2023-12-24T16:37:13.331+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:37:13.331+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-12-24T16:37:13.359+0000] {logging_mixin.py:154} INFO - [2023-12-24T16:37:13.359+0000] {dag.py:3722} INFO - Setting next_dagrun for air_quality to None, run_after=None
+[2023-12-24T16:37:13.388+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/airQuality.py took 0.189 seconds

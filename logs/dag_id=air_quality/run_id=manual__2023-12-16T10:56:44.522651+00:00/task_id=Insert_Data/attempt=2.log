@@ -1,0 +1,45 @@
+[2023-12-16T11:01:59.481+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-16T10:56:44.522651+00:00/task_id=Insert_Data permission to 509
+[2023-12-16T11:01:59.482+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-16T10:56:44.522651+00:00/task_id=Insert_Data permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-16T10:56:44.522651+00:00/task_id=Insert_Data'
+[2023-12-16T11:01:59.509+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-16T10:56:44.522651+00:00/task_id=Insert_Data permission to 509
+[2023-12-16T11:01:59.510+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-16T10:56:44.522651+00:00/task_id=Insert_Data permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-16T10:56:44.522651+00:00/task_id=Insert_Data'
+[2023-12-16T11:01:59.540+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: air_quality.Insert_Data manual__2023-12-16T10:56:44.522651+00:00 [queued]>
+[2023-12-16T11:01:59.551+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: air_quality.Insert_Data manual__2023-12-16T10:56:44.522651+00:00 [queued]>
+[2023-12-16T11:01:59.552+0000] {taskinstance.py:1361} INFO - Starting attempt 2 of 2
+[2023-12-16T11:01:59.568+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): Insert_Data> on 2023-12-16 10:56:44.522651+00:00
+[2023-12-16T11:01:59.572+0000] {standard_task_runner.py:57} INFO - Started process 234 to run task
+[2023-12-16T11:01:59.575+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'air_quality', 'Insert_Data', 'manual__2023-12-16T10:56:44.522651+00:00', '--job-id', '118', '--raw', '--subdir', 'DAGS_FOLDER/airQuality.py', '--cfg-path', '/tmp/tmpoy4bk61c']
+[2023-12-16T11:01:59.576+0000] {standard_task_runner.py:85} INFO - Job 118: Subtask Insert_Data
+[2023-12-16T11:01:59.620+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-16T10:56:44.522651+00:00/task_id=Insert_Data permission to 509
+[2023-12-16T11:01:59.621+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-16T10:56:44.522651+00:00/task_id=Insert_Data permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-16T10:56:44.522651+00:00/task_id=Insert_Data'
+[2023-12-16T11:01:59.623+0000] {task_command.py:416} INFO - Running <TaskInstance: air_quality.Insert_Data manual__2023-12-16T10:56:44.522651+00:00 [running]> on host d739bc9bef06
+[2023-12-16T11:01:59.722+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ghifari' AIRFLOW_CTX_DAG_ID='air_quality' AIRFLOW_CTX_TASK_ID='Insert_Data' AIRFLOW_CTX_EXECUTION_DATE='2023-12-16T10:56:44.522651+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-12-16T10:56:44.522651+00:00'
+[2023-12-16T11:02:00.236+0000] {logging_mixin.py:154} INFO - city           object
+country        object
+unit           object
+last_value    float64
+lat           float64
+lng           float64
+dtype: object
+[2023-12-16T11:02:00.258+0000] {base.py:73} INFO - Using connection ID 'neonServerDB-Postgres' for task execution.
+[2023-12-16T11:02:17.512+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/airQuality.py", line 148, in insertValues
+    connDB.insert_rows(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/common/sql/hooks/sql.py", line 509, in insert_rows
+    cur.execute(sql, values)
+psycopg2.errors.InvalidTextRepresentation: invalid input syntax for type double precision: "last_value"
+LINE 1: ..._value, lat, lng) VALUES ('city','country','unit','last_valu...
+                                                             ^
+
+[2023-12-16T11:02:17.539+0000] {taskinstance.py:211} INFO - Setting task Error_Response to SKIPPED due to dag's `fail_stop` setting.
+[2023-12-16T11:02:17.540+0000] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=air_quality, task_id=Insert_Data, execution_date=20231216T105644, start_date=20231216T110159, end_date=20231216T110217
+[2023-12-16T11:02:17.555+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 118 for task Insert_Data (invalid input syntax for type double precision: "last_value"
+LINE 1: ..._value, lat, lng) VALUES ('city','country','unit','last_valu...
+                                                             ^
+; 234)
+[2023-12-16T11:02:17.580+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-12-16T11:02:17.599+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

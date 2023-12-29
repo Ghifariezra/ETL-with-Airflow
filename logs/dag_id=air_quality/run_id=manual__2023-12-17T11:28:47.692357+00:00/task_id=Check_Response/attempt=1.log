@@ -1,0 +1,31 @@
+[2023-12-17T11:28:52.194+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-17T11:28:47.692357+00:00/task_id=Check_Response permission to 509
+[2023-12-17T11:28:52.196+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-17T11:28:47.692357+00:00/task_id=Check_Response permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-17T11:28:47.692357+00:00/task_id=Check_Response'
+[2023-12-17T11:28:52.253+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-17T11:28:47.692357+00:00/task_id=Check_Response permission to 509
+[2023-12-17T11:28:52.255+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-17T11:28:47.692357+00:00/task_id=Check_Response permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-17T11:28:47.692357+00:00/task_id=Check_Response'
+[2023-12-17T11:28:52.317+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: air_quality.Check_Response manual__2023-12-17T11:28:47.692357+00:00 [queued]>
+[2023-12-17T11:28:52.338+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: air_quality.Check_Response manual__2023-12-17T11:28:47.692357+00:00 [queued]>
+[2023-12-17T11:28:52.340+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-12-17T11:28:52.370+0000] {taskinstance.py:1382} INFO - Executing <Task(BranchPythonOperator): Check_Response> on 2023-12-17 11:28:47.692357+00:00
+[2023-12-17T11:28:52.377+0000] {standard_task_runner.py:57} INFO - Started process 2758 to run task
+[2023-12-17T11:28:52.383+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'air_quality', 'Check_Response', 'manual__2023-12-17T11:28:47.692357+00:00', '--job-id', '435', '--raw', '--subdir', 'DAGS_FOLDER/airQuality.py', '--cfg-path', '/tmp/tmpsw1n2hxb']
+[2023-12-17T11:28:52.386+0000] {standard_task_runner.py:85} INFO - Job 435: Subtask Check_Response
+[2023-12-17T11:28:52.478+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-17T11:28:47.692357+00:00/task_id=Check_Response permission to 509
+[2023-12-17T11:28:52.479+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-17T11:28:47.692357+00:00/task_id=Check_Response permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-17T11:28:47.692357+00:00/task_id=Check_Response'
+[2023-12-17T11:28:52.483+0000] {task_command.py:416} INFO - Running <TaskInstance: air_quality.Check_Response manual__2023-12-17T11:28:47.692357+00:00 [running]> on host 1a58977f5573
+[2023-12-17T11:28:52.667+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ghifari' AIRFLOW_CTX_DAG_ID='air_quality' AIRFLOW_CTX_TASK_ID='Check_Response' AIRFLOW_CTX_EXECUTION_DATE='2023-12-17T11:28:47.692357+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-12-17T11:28:47.692357+00:00'
+[2023-12-17T11:28:52.694+0000] {airQuality.py:112} INFO - Data Found: None
+[2023-12-17T11:28:52.696+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 226, in execute
+    branch = super().execute(context)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/airQuality.py", line 117, in checkResponse
+    logger.info(f'Data Not Found: {resultResponse.status_code} - {resultResponse.reason}')
+AttributeError: 'NoneType' object has no attribute 'status_code'
+[2023-12-17T11:28:52.718+0000] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=air_quality, task_id=Check_Response, execution_date=20231217T112847, start_date=20231217T112852, end_date=20231217T112852
+[2023-12-17T11:28:52.749+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 435 for task Check_Response ('NoneType' object has no attribute 'status_code'; 2758)
+[2023-12-17T11:28:52.798+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2023-12-17T11:28:52.858+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

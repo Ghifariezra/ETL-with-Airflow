@@ -1,0 +1,92 @@
+[2023-12-28T16:08:49.240+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-23T04:00:00+00:00/task_id=Check_Response permission to 509
+[2023-12-28T16:08:49.242+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-23T04:00:00+00:00/task_id=Check_Response permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-23T04:00:00+00:00/task_id=Check_Response'
+[2023-12-28T16:08:49.391+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-23T04:00:00+00:00/task_id=Check_Response permission to 509
+[2023-12-28T16:08:49.393+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-23T04:00:00+00:00/task_id=Check_Response permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-23T04:00:00+00:00/task_id=Check_Response'
+[2023-12-28T16:08:49.525+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: air_quality.Check_Response scheduled__2023-12-23T04:00:00+00:00 [queued]>
+[2023-12-28T16:08:49.628+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: air_quality.Check_Response scheduled__2023-12-23T04:00:00+00:00 [queued]>
+[2023-12-28T16:08:49.638+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-12-28T16:08:49.715+0000] {taskinstance.py:1382} INFO - Executing <Task(BranchPythonOperator): Check_Response> on 2023-12-23 04:00:00+00:00
+[2023-12-28T16:08:49.738+0000] {standard_task_runner.py:57} INFO - Started process 508 to run task
+[2023-12-28T16:08:49.773+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'air_quality', 'Check_Response', 'scheduled__2023-12-23T04:00:00+00:00', '--job-id', '746', '--raw', '--subdir', 'DAGS_FOLDER/airQuality.py', '--cfg-path', '/tmp/tmpfvqrsqnn']
+[2023-12-28T16:08:49.812+0000] {standard_task_runner.py:85} INFO - Job 746: Subtask Check_Response
+[2023-12-28T16:08:50.225+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-23T04:00:00+00:00/task_id=Check_Response permission to 509
+[2023-12-28T16:08:50.229+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-23T04:00:00+00:00/task_id=Check_Response permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-23T04:00:00+00:00/task_id=Check_Response'
+[2023-12-28T16:08:50.251+0000] {task_command.py:416} INFO - Running <TaskInstance: air_quality.Check_Response scheduled__2023-12-23T04:00:00+00:00 [running]> on host d67dd4682ccf
+[2023-12-28T16:08:50.747+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ghifari' AIRFLOW_CTX_DAG_ID='air_quality' AIRFLOW_CTX_TASK_ID='Check_Response' AIRFLOW_CTX_EXECUTION_DATE='2023-12-23T04:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-23T04:00:00+00:00'
+[2023-12-28T16:08:50.833+0000] {airQuality.py:90} INFO - Data Found: {'city': ['Jakarta'], 'country': ['ID'], 'unit': ['pm25'], 'last_value': [-999.0], 'lat': [-6.182536], 'lng': [106.834236]}
+[2023-12-28T16:08:50.840+0000] {python.py:194} INFO - Done. Returned value was: Transform
+[2023-12-28T16:08:50.841+0000] {python.py:227} INFO - Branch callable return Transform
+[2023-12-28T16:08:50.842+0000] {skipmixin.py:173} INFO - Following branch Transform
+[2023-12-28T16:08:50.926+0000] {skipmixin.py:239} INFO - Skipping tasks [('Error_Response', -1)]
+[2023-12-28T16:08:51.178+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=air_quality, task_id=Check_Response, execution_date=20231223T040000, start_date=20231228T160849, end_date=20231228T160851
+[2023-12-28T16:08:51.308+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-28T16:08:51.469+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-12-28T16:52:03.163+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-23T04:00:00+00:00/task_id=Check_Response permission to 509
+[2023-12-28T16:52:03.172+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-23T04:00:00+00:00/task_id=Check_Response permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-23T04:00:00+00:00/task_id=Check_Response'
+[2023-12-28T16:52:03.350+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-23T04:00:00+00:00/task_id=Check_Response permission to 509
+[2023-12-28T16:52:03.358+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-23T04:00:00+00:00/task_id=Check_Response permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-23T04:00:00+00:00/task_id=Check_Response'
+[2023-12-28T16:52:03.561+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: air_quality.Check_Response scheduled__2023-12-23T04:00:00+00:00 [queued]>
+[2023-12-28T16:52:03.638+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: air_quality.Check_Response scheduled__2023-12-23T04:00:00+00:00 [queued]>
+[2023-12-28T16:52:03.639+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-12-28T16:52:03.748+0000] {taskinstance.py:1382} INFO - Executing <Task(BranchPythonOperator): Check_Response> on 2023-12-23 04:00:00+00:00
+[2023-12-28T16:52:03.781+0000] {standard_task_runner.py:57} INFO - Started process 304 to run task
+[2023-12-28T16:52:03.805+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'air_quality', 'Check_Response', 'scheduled__2023-12-23T04:00:00+00:00', '--job-id', '894', '--raw', '--subdir', 'DAGS_FOLDER/airQuality.py', '--cfg-path', '/tmp/tmpwqdi4ced']
+[2023-12-28T16:52:03.815+0000] {standard_task_runner.py:85} INFO - Job 894: Subtask Check_Response
+[2023-12-28T16:52:04.047+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-23T04:00:00+00:00/task_id=Check_Response permission to 509
+[2023-12-28T16:52:04.054+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-23T04:00:00+00:00/task_id=Check_Response permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-23T04:00:00+00:00/task_id=Check_Response'
+[2023-12-28T16:52:04.070+0000] {task_command.py:416} INFO - Running <TaskInstance: air_quality.Check_Response scheduled__2023-12-23T04:00:00+00:00 [running]> on host d67dd4682ccf
+[2023-12-28T16:52:04.530+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ghifari' AIRFLOW_CTX_DAG_ID='air_quality' AIRFLOW_CTX_TASK_ID='Check_Response' AIRFLOW_CTX_EXECUTION_DATE='2023-12-23T04:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-23T04:00:00+00:00'
+[2023-12-28T16:52:04.580+0000] {airQuality.py:90} INFO - Data Found: {'city': ['Jakarta'], 'country': ['ID'], 'unit': ['o3'], 'last_value': [-0.999], 'lat': [-6.182536], 'lng': [106.834236]}
+[2023-12-28T16:52:04.585+0000] {python.py:194} INFO - Done. Returned value was: Transform
+[2023-12-28T16:52:04.586+0000] {python.py:227} INFO - Branch callable return Transform
+[2023-12-28T16:52:04.588+0000] {skipmixin.py:173} INFO - Following branch Transform
+[2023-12-28T16:52:04.710+0000] {skipmixin.py:239} INFO - Skipping tasks [('Error_Response', -1)]
+[2023-12-28T16:52:04.877+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=air_quality, task_id=Check_Response, execution_date=20231223T040000, start_date=20231228T165203, end_date=20231228T165204
+[2023-12-28T16:52:04.941+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-28T16:52:05.528+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-12-28T16:52:36.409+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-23T04:00:00+00:00/task_id=Check_Response permission to 509
+[2023-12-28T16:52:36.418+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-23T04:00:00+00:00/task_id=Check_Response permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-23T04:00:00+00:00/task_id=Check_Response'
+[2023-12-28T16:52:36.566+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-23T04:00:00+00:00/task_id=Check_Response permission to 509
+[2023-12-28T16:52:36.569+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-23T04:00:00+00:00/task_id=Check_Response permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-23T04:00:00+00:00/task_id=Check_Response'
+[2023-12-28T16:52:36.738+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: air_quality.Check_Response scheduled__2023-12-23T04:00:00+00:00 [queued]>
+[2023-12-28T16:52:36.790+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: air_quality.Check_Response scheduled__2023-12-23T04:00:00+00:00 [queued]>
+[2023-12-28T16:52:36.792+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-12-28T16:52:36.857+0000] {taskinstance.py:1382} INFO - Executing <Task(BranchPythonOperator): Check_Response> on 2023-12-23 04:00:00+00:00
+[2023-12-28T16:52:36.868+0000] {standard_task_runner.py:57} INFO - Started process 626 to run task
+[2023-12-28T16:52:36.885+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'air_quality', 'Check_Response', 'scheduled__2023-12-23T04:00:00+00:00', '--job-id', '966', '--raw', '--subdir', 'DAGS_FOLDER/airQuality.py', '--cfg-path', '/tmp/tmphf1drlmb']
+[2023-12-28T16:52:36.892+0000] {standard_task_runner.py:85} INFO - Job 966: Subtask Check_Response
+[2023-12-28T16:52:37.111+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-23T04:00:00+00:00/task_id=Check_Response permission to 509
+[2023-12-28T16:52:37.112+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-23T04:00:00+00:00/task_id=Check_Response permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-23T04:00:00+00:00/task_id=Check_Response'
+[2023-12-28T16:52:37.117+0000] {task_command.py:416} INFO - Running <TaskInstance: air_quality.Check_Response scheduled__2023-12-23T04:00:00+00:00 [running]> on host d67dd4682ccf
+[2023-12-28T16:52:37.468+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ghifari' AIRFLOW_CTX_DAG_ID='air_quality' AIRFLOW_CTX_TASK_ID='Check_Response' AIRFLOW_CTX_EXECUTION_DATE='2023-12-23T04:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-23T04:00:00+00:00'
+[2023-12-28T16:52:37.509+0000] {airQuality.py:90} INFO - Data Found: {'city': ['Jakarta'], 'country': ['ID'], 'unit': ['o3'], 'last_value': [-0.999], 'lat': [-6.182536], 'lng': [106.834236]}
+[2023-12-28T16:52:37.511+0000] {python.py:194} INFO - Done. Returned value was: Transform
+[2023-12-28T16:52:37.514+0000] {python.py:227} INFO - Branch callable return Transform
+[2023-12-28T16:52:37.517+0000] {skipmixin.py:173} INFO - Following branch Transform
+[2023-12-28T16:52:37.579+0000] {skipmixin.py:239} INFO - Skipping tasks [('Error_Response', -1)]
+[2023-12-28T16:52:37.770+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=air_quality, task_id=Check_Response, execution_date=20231223T040000, start_date=20231228T165236, end_date=20231228T165237
+[2023-12-28T16:52:37.825+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-28T16:52:37.955+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-12-28T16:55:30.425+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-23T04:00:00+00:00/task_id=Check_Response permission to 509
+[2023-12-28T16:55:30.427+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-23T04:00:00+00:00/task_id=Check_Response permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-23T04:00:00+00:00/task_id=Check_Response'
+[2023-12-28T16:55:30.482+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-23T04:00:00+00:00/task_id=Check_Response permission to 509
+[2023-12-28T16:55:30.483+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-23T04:00:00+00:00/task_id=Check_Response permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-23T04:00:00+00:00/task_id=Check_Response'
+[2023-12-28T16:55:30.580+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: air_quality.Check_Response scheduled__2023-12-23T04:00:00+00:00 [queued]>
+[2023-12-28T16:55:30.607+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: air_quality.Check_Response scheduled__2023-12-23T04:00:00+00:00 [queued]>
+[2023-12-28T16:55:30.608+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-12-28T16:55:30.779+0000] {taskinstance.py:1382} INFO - Executing <Task(BranchPythonOperator): Check_Response> on 2023-12-23 04:00:00+00:00
+[2023-12-28T16:55:30.788+0000] {standard_task_runner.py:57} INFO - Started process 1573 to run task
+[2023-12-28T16:55:30.795+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'air_quality', 'Check_Response', 'scheduled__2023-12-23T04:00:00+00:00', '--job-id', '1187', '--raw', '--subdir', 'DAGS_FOLDER/airQuality.py', '--cfg-path', '/tmp/tmpipf7batv']
+[2023-12-28T16:55:30.798+0000] {standard_task_runner.py:85} INFO - Job 1187: Subtask Check_Response
+[2023-12-28T16:55:30.930+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-23T04:00:00+00:00/task_id=Check_Response permission to 509
+[2023-12-28T16:55:30.932+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-23T04:00:00+00:00/task_id=Check_Response permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-23T04:00:00+00:00/task_id=Check_Response'
+[2023-12-28T16:55:30.936+0000] {task_command.py:416} INFO - Running <TaskInstance: air_quality.Check_Response scheduled__2023-12-23T04:00:00+00:00 [running]> on host d67dd4682ccf
+[2023-12-28T16:55:31.273+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ghifari' AIRFLOW_CTX_DAG_ID='air_quality' AIRFLOW_CTX_TASK_ID='Check_Response' AIRFLOW_CTX_EXECUTION_DATE='2023-12-23T04:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-23T04:00:00+00:00'
+[2023-12-28T16:55:31.321+0000] {airQuality.py:90} INFO - Data Found: {'city': ['Jakarta'], 'country': ['ID'], 'unit': ['o3'], 'last_value': [-0.999], 'lat': [-6.182536], 'lng': [106.834236]}
+[2023-12-28T16:55:31.323+0000] {python.py:194} INFO - Done. Returned value was: Transform
+[2023-12-28T16:55:31.324+0000] {python.py:227} INFO - Branch callable return Transform
+[2023-12-28T16:55:31.326+0000] {skipmixin.py:173} INFO - Following branch Transform
+[2023-12-28T16:55:31.379+0000] {skipmixin.py:239} INFO - Skipping tasks [('Error_Response', -1)]
+[2023-12-28T16:55:31.514+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=air_quality, task_id=Check_Response, execution_date=20231223T040000, start_date=20231228T165530, end_date=20231228T165531
+[2023-12-28T16:55:31.584+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-28T16:55:31.669+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check

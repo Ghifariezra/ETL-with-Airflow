@@ -1,0 +1,19 @@
+[2023-12-13T14:53:10.537+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-13T14:48:07.668352+00:00/task_id=connectionHTTP permission to 509
+[2023-12-13T14:53:10.539+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-13T14:48:07.668352+00:00/task_id=connectionHTTP permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-13T14:48:07.668352+00:00/task_id=connectionHTTP'
+[2023-12-13T14:53:10.584+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-13T14:48:07.668352+00:00/task_id=connectionHTTP permission to 509
+[2023-12-13T14:53:10.585+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-13T14:48:07.668352+00:00/task_id=connectionHTTP permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-13T14:48:07.668352+00:00/task_id=connectionHTTP'
+[2023-12-13T14:53:10.609+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: air_quality.connectionHTTP manual__2023-12-13T14:48:07.668352+00:00 [queued]>
+[2023-12-13T14:53:10.619+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: air_quality.connectionHTTP manual__2023-12-13T14:48:07.668352+00:00 [queued]>
+[2023-12-13T14:53:10.620+0000] {taskinstance.py:1361} INFO - Starting attempt 2 of 2
+[2023-12-13T14:53:10.636+0000] {taskinstance.py:1382} INFO - Executing <Task(_PythonDecoratedOperator): connectionHTTP> on 2023-12-13 14:48:07.668352+00:00
+[2023-12-13T14:53:10.641+0000] {standard_task_runner.py:57} INFO - Started process 256 to run task
+[2023-12-13T14:53:10.645+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'air_quality', 'connectionHTTP', 'manual__2023-12-13T14:48:07.668352+00:00', '--job-id', '22', '--raw', '--subdir', 'DAGS_FOLDER/airQuality.py', '--cfg-path', '/tmp/tmplxrcu15z']
+[2023-12-13T14:53:10.647+0000] {standard_task_runner.py:85} INFO - Job 22: Subtask connectionHTTP
+[2023-12-13T14:53:10.702+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-13T14:48:07.668352+00:00/task_id=connectionHTTP permission to 509
+[2023-12-13T14:53:10.703+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-13T14:48:07.668352+00:00/task_id=connectionHTTP permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-13T14:48:07.668352+00:00/task_id=connectionHTTP'
+[2023-12-13T14:53:10.706+0000] {task_command.py:416} INFO - Running <TaskInstance: air_quality.connectionHTTP manual__2023-12-13T14:48:07.668352+00:00 [running]> on host d739bc9bef06
+[2023-12-13T14:53:10.812+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ghifari' AIRFLOW_CTX_DAG_ID='air_quality' AIRFLOW_CTX_TASK_ID='connectionHTTP' AIRFLOW_CTX_EXECUTION_DATE='2023-12-13T14:48:07.668352+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-12-13T14:48:07.668352+00:00'
+[2023-12-13T14:53:10.814+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-12-13T14:53:10.825+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=air_quality, task_id=connectionHTTP, execution_date=20231213T144807, start_date=20231213T145310, end_date=20231213T145310
+[2023-12-13T14:53:10.858+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-13T14:53:10.879+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

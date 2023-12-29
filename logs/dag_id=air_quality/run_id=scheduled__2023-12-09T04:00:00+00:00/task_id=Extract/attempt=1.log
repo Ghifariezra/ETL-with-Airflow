@@ -1,0 +1,95 @@
+[2023-12-17T11:19:00.382+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract permission to 509
+[2023-12-17T11:19:00.392+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract'
+[2023-12-17T11:19:00.480+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract permission to 509
+[2023-12-17T11:19:00.481+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract'
+[2023-12-17T11:19:00.599+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: air_quality.Extract scheduled__2023-12-09T04:00:00+00:00 [queued]>
+[2023-12-17T11:19:00.641+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: air_quality.Extract scheduled__2023-12-09T04:00:00+00:00 [queued]>
+[2023-12-17T11:19:00.642+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-12-17T11:19:00.888+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): Extract> on 2023-12-09 04:00:00+00:00
+[2023-12-17T11:19:00.901+0000] {standard_task_runner.py:57} INFO - Started process 2381 to run task
+[2023-12-17T11:19:00.911+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'air_quality', 'Extract', 'scheduled__2023-12-09T04:00:00+00:00', '--job-id', '378', '--raw', '--subdir', 'DAGS_FOLDER/airQuality.py', '--cfg-path', '/tmp/tmpsxlmwviv']
+[2023-12-17T11:19:00.914+0000] {standard_task_runner.py:85} INFO - Job 378: Subtask Extract
+[2023-12-17T11:19:01.102+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract permission to 509
+[2023-12-17T11:19:01.104+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract'
+[2023-12-17T11:19:01.107+0000] {task_command.py:416} INFO - Running <TaskInstance: air_quality.Extract scheduled__2023-12-09T04:00:00+00:00 [running]> on host 1a58977f5573
+[2023-12-17T11:19:01.304+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ghifari' AIRFLOW_CTX_DAG_ID='air_quality' AIRFLOW_CTX_TASK_ID='Extract' AIRFLOW_CTX_EXECUTION_DATE='2023-12-09T04:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-09T04:00:00+00:00'
+[2023-12-17T11:19:01.542+0000] {python.py:194} INFO - Done. Returned value was: {'city': ['Jakarta'], 'country': ['ID'], 'unit': ['o3'], 'last_value': [-0.999], 'lat': [-6.182536], 'lng': [106.834236]}
+[2023-12-17T11:19:01.602+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=air_quality, task_id=Extract, execution_date=20231209T040000, start_date=20231217T111900, end_date=20231217T111901
+[2023-12-17T11:19:01.774+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-17T11:19:01.837+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-12-17T12:18:07.802+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract permission to 509
+[2023-12-17T12:18:07.808+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract'
+[2023-12-17T12:18:07.882+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract permission to 509
+[2023-12-17T12:18:07.883+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract'
+[2023-12-17T12:18:07.966+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: air_quality.Extract scheduled__2023-12-09T04:00:00+00:00 [queued]>
+[2023-12-17T12:18:07.991+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: air_quality.Extract scheduled__2023-12-09T04:00:00+00:00 [queued]>
+[2023-12-17T12:18:07.992+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-12-17T12:18:08.021+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): Extract> on 2023-12-09 04:00:00+00:00
+[2023-12-17T12:18:08.031+0000] {standard_task_runner.py:57} INFO - Started process 4077 to run task
+[2023-12-17T12:18:08.040+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'air_quality', 'Extract', 'scheduled__2023-12-09T04:00:00+00:00', '--job-id', '589', '--raw', '--subdir', 'DAGS_FOLDER/airQuality.py', '--cfg-path', '/tmp/tmppv50znh2']
+[2023-12-17T12:18:08.043+0000] {standard_task_runner.py:85} INFO - Job 589: Subtask Extract
+[2023-12-17T12:18:08.190+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract permission to 509
+[2023-12-17T12:18:08.192+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract'
+[2023-12-17T12:18:08.221+0000] {task_command.py:416} INFO - Running <TaskInstance: air_quality.Extract scheduled__2023-12-09T04:00:00+00:00 [running]> on host 1a58977f5573
+[2023-12-17T12:18:08.902+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ghifari' AIRFLOW_CTX_DAG_ID='air_quality' AIRFLOW_CTX_TASK_ID='Extract' AIRFLOW_CTX_EXECUTION_DATE='2023-12-09T04:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-09T04:00:00+00:00'
+[2023-12-17T12:18:09.129+0000] {python.py:194} INFO - Done. Returned value was: {'city': ['Jakarta'], 'country': ['ID'], 'unit': ['pm25'], 'last_value': [-999.0], 'lat': [-6.182536], 'lng': [106.834236]}
+[2023-12-17T12:18:09.192+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=air_quality, task_id=Extract, execution_date=20231209T040000, start_date=20231217T121807, end_date=20231217T121809
+[2023-12-17T12:18:09.284+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-17T12:18:09.400+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-12-17T12:18:46.231+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract permission to 509
+[2023-12-17T12:18:46.233+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract'
+[2023-12-17T12:18:46.275+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract permission to 509
+[2023-12-17T12:18:46.276+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract'
+[2023-12-17T12:18:46.318+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: air_quality.Extract scheduled__2023-12-09T04:00:00+00:00 [queued]>
+[2023-12-17T12:18:46.333+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: air_quality.Extract scheduled__2023-12-09T04:00:00+00:00 [queued]>
+[2023-12-17T12:18:46.334+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-12-17T12:18:46.357+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): Extract> on 2023-12-09 04:00:00+00:00
+[2023-12-17T12:18:46.363+0000] {standard_task_runner.py:57} INFO - Started process 4436 to run task
+[2023-12-17T12:18:46.367+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'air_quality', 'Extract', 'scheduled__2023-12-09T04:00:00+00:00', '--job-id', '670', '--raw', '--subdir', 'DAGS_FOLDER/airQuality.py', '--cfg-path', '/tmp/tmpr4h2l_bc']
+[2023-12-17T12:18:46.368+0000] {standard_task_runner.py:85} INFO - Job 670: Subtask Extract
+[2023-12-17T12:18:46.428+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract permission to 509
+[2023-12-17T12:18:46.429+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract'
+[2023-12-17T12:18:46.431+0000] {task_command.py:416} INFO - Running <TaskInstance: air_quality.Extract scheduled__2023-12-09T04:00:00+00:00 [running]> on host 1a58977f5573
+[2023-12-17T12:18:46.565+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ghifari' AIRFLOW_CTX_DAG_ID='air_quality' AIRFLOW_CTX_TASK_ID='Extract' AIRFLOW_CTX_EXECUTION_DATE='2023-12-09T04:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-09T04:00:00+00:00'
+[2023-12-17T12:18:46.642+0000] {python.py:194} INFO - Done. Returned value was: {'city': ['Jakarta'], 'country': ['ID'], 'unit': ['pm25'], 'last_value': [-999.0], 'lat': [-6.182536], 'lng': [106.834236]}
+[2023-12-17T12:18:46.667+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=air_quality, task_id=Extract, execution_date=20231209T040000, start_date=20231217T121846, end_date=20231217T121846
+[2023-12-17T12:18:46.700+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-17T12:18:46.739+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-12-28T16:51:39.338+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract permission to 509
+[2023-12-28T16:51:39.342+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract'
+[2023-12-28T16:51:39.468+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract permission to 509
+[2023-12-28T16:51:39.470+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract'
+[2023-12-28T16:51:39.594+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: air_quality.Extract scheduled__2023-12-09T04:00:00+00:00 [queued]>
+[2023-12-28T16:51:39.673+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: air_quality.Extract scheduled__2023-12-09T04:00:00+00:00 [queued]>
+[2023-12-28T16:51:39.675+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-12-28T16:51:39.767+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): Extract> on 2023-12-09 04:00:00+00:00
+[2023-12-28T16:51:39.791+0000] {standard_task_runner.py:57} INFO - Started process 173 to run task
+[2023-12-28T16:51:39.802+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'air_quality', 'Extract', 'scheduled__2023-12-09T04:00:00+00:00', '--job-id', '839', '--raw', '--subdir', 'DAGS_FOLDER/airQuality.py', '--cfg-path', '/tmp/tmpnte0drbt']
+[2023-12-28T16:51:39.808+0000] {standard_task_runner.py:85} INFO - Job 839: Subtask Extract
+[2023-12-28T16:51:39.981+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract permission to 509
+[2023-12-28T16:51:39.983+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract'
+[2023-12-28T16:51:40.003+0000] {task_command.py:416} INFO - Running <TaskInstance: air_quality.Extract scheduled__2023-12-09T04:00:00+00:00 [running]> on host d67dd4682ccf
+[2023-12-28T16:51:40.268+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ghifari' AIRFLOW_CTX_DAG_ID='air_quality' AIRFLOW_CTX_TASK_ID='Extract' AIRFLOW_CTX_EXECUTION_DATE='2023-12-09T04:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-09T04:00:00+00:00'
+[2023-12-28T16:51:40.445+0000] {python.py:194} INFO - Done. Returned value was: {'city': ['Jakarta'], 'country': ['ID'], 'unit': ['o3'], 'last_value': [-0.999], 'lat': [-6.182536], 'lng': [106.834236]}
+[2023-12-28T16:51:40.546+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=air_quality, task_id=Extract, execution_date=20231209T040000, start_date=20231228T165139, end_date=20231228T165140
+[2023-12-28T16:51:40.697+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-28T16:51:40.966+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2023-12-28T16:54:43.669+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract permission to 509
+[2023-12-28T16:54:43.672+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract'
+[2023-12-28T16:54:43.725+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract permission to 509
+[2023-12-28T16:54:43.726+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract'
+[2023-12-28T16:54:43.783+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: air_quality.Extract scheduled__2023-12-09T04:00:00+00:00 [queued]>
+[2023-12-28T16:54:43.803+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: air_quality.Extract scheduled__2023-12-09T04:00:00+00:00 [queued]>
+[2023-12-28T16:54:43.804+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-12-28T16:54:43.885+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): Extract> on 2023-12-09 04:00:00+00:00
+[2023-12-28T16:54:43.892+0000] {standard_task_runner.py:57} INFO - Started process 1176 to run task
+[2023-12-28T16:54:43.899+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'air_quality', 'Extract', 'scheduled__2023-12-09T04:00:00+00:00', '--job-id', '1096', '--raw', '--subdir', 'DAGS_FOLDER/airQuality.py', '--cfg-path', '/tmp/tmpzlt81dhz']
+[2023-12-28T16:54:43.902+0000] {standard_task_runner.py:85} INFO - Job 1096: Subtask Extract
+[2023-12-28T16:54:44.017+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract permission to 509
+[2023-12-28T16:54:44.019+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-09T04:00:00+00:00/task_id=Extract'
+[2023-12-28T16:54:44.023+0000] {task_command.py:416} INFO - Running <TaskInstance: air_quality.Extract scheduled__2023-12-09T04:00:00+00:00 [running]> on host d67dd4682ccf
+[2023-12-28T16:54:44.209+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ghifari' AIRFLOW_CTX_DAG_ID='air_quality' AIRFLOW_CTX_TASK_ID='Extract' AIRFLOW_CTX_EXECUTION_DATE='2023-12-09T04:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-09T04:00:00+00:00'
+[2023-12-28T16:54:44.326+0000] {python.py:194} INFO - Done. Returned value was: {'city': ['Jakarta'], 'country': ['ID'], 'unit': ['o3'], 'last_value': [-0.999], 'lat': [-6.182536], 'lng': [106.834236]}
+[2023-12-28T16:54:44.383+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=air_quality, task_id=Extract, execution_date=20231209T040000, start_date=20231228T165443, end_date=20231228T165444
+[2023-12-28T16:54:44.435+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-28T16:54:44.511+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,29 @@
+[2023-12-13T12:58:01.385+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-13T12:58:00.364502+00:00/task_id=hello permission to 509
+[2023-12-13T12:58:01.387+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-13T12:58:00.364502+00:00/task_id=hello permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-13T12:58:00.364502+00:00/task_id=hello'
+[2023-12-13T12:58:01.446+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-13T12:58:00.364502+00:00/task_id=hello permission to 509
+[2023-12-13T12:58:01.447+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-13T12:58:00.364502+00:00/task_id=hello permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-13T12:58:00.364502+00:00/task_id=hello'
+[2023-12-13T12:58:01.505+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: air_quality.hello manual__2023-12-13T12:58:00.364502+00:00 [queued]>
+[2023-12-13T12:58:01.527+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: air_quality.hello manual__2023-12-13T12:58:00.364502+00:00 [queued]>
+[2023-12-13T12:58:01.528+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-12-13T12:58:01.561+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): hello> on 2023-12-13 12:58:00.364502+00:00
+[2023-12-13T12:58:01.568+0000] {standard_task_runner.py:57} INFO - Started process 1185 to run task
+[2023-12-13T12:58:01.577+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'air_quality', 'hello', 'manual__2023-12-13T12:58:00.364502+00:00', '--job-id', '7', '--raw', '--subdir', 'DAGS_FOLDER/airQuality.py', '--cfg-path', '/tmp/tmpz5uy0ox3']
+[2023-12-13T12:58:01.581+0000] {standard_task_runner.py:85} INFO - Job 7: Subtask hello
+[2023-12-13T12:58:01.710+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-13T12:58:00.364502+00:00/task_id=hello permission to 509
+[2023-12-13T12:58:01.711+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-13T12:58:00.364502+00:00/task_id=hello permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=manual__2023-12-13T12:58:00.364502+00:00/task_id=hello'
+[2023-12-13T12:58:01.714+0000] {task_command.py:416} INFO - Running <TaskInstance: air_quality.hello manual__2023-12-13T12:58:00.364502+00:00 [running]> on host d739bc9bef06
+[2023-12-13T12:58:01.812+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ghifari' AIRFLOW_CTX_DAG_ID='air_quality' AIRFLOW_CTX_TASK_ID='hello' AIRFLOW_CTX_EXECUTION_DATE='2023-12-13T12:58:00.364502+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-12-13T12:58:00.364502+00:00'
+[2023-12-13T12:58:01.815+0000] {python.py:194} INFO - Done. Returned value was: ENDPOINT: dba9e79e0e39099dc324deb6128fa3061bf0db64b458f86c8ccfc5a4f923dde9
+HEADERS: {
+            'city': [results['city']],
+            'country': [results['country']],
+            
+            'unit': [results['parameters'][0]['parameter']],
+            'last_value': [results['parameters'][0]['lastValue']],
+
+            'lat': [results['coordinates']['latitude']],
+            'lng': [results['coordinates']['longitude']]
+        }
+[2023-12-13T12:58:01.842+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=air_quality, task_id=hello, execution_date=20231213T125800, start_date=20231213T125801, end_date=20231213T125801
+[2023-12-13T12:58:01.870+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-13T12:58:01.905+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

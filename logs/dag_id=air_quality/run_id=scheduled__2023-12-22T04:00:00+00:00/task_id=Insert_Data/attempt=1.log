@@ -1,0 +1,81 @@
+[2023-12-28T16:09:20.581+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-22T04:00:00+00:00/task_id=Insert_Data permission to 509
+[2023-12-28T16:09:20.584+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-22T04:00:00+00:00/task_id=Insert_Data permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-22T04:00:00+00:00/task_id=Insert_Data'
+[2023-12-28T16:09:20.656+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-22T04:00:00+00:00/task_id=Insert_Data permission to 509
+[2023-12-28T16:09:20.657+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-22T04:00:00+00:00/task_id=Insert_Data permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-22T04:00:00+00:00/task_id=Insert_Data'
+[2023-12-28T16:09:20.746+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: air_quality.Insert_Data scheduled__2023-12-22T04:00:00+00:00 [queued]>
+[2023-12-28T16:09:20.770+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: air_quality.Insert_Data scheduled__2023-12-22T04:00:00+00:00 [queued]>
+[2023-12-28T16:09:20.771+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-12-28T16:09:20.799+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): Insert_Data> on 2023-12-22 04:00:00+00:00
+[2023-12-28T16:09:20.806+0000] {standard_task_runner.py:57} INFO - Started process 633 to run task
+[2023-12-28T16:09:20.812+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'air_quality', 'Insert_Data', 'scheduled__2023-12-22T04:00:00+00:00', '--job-id', '786', '--raw', '--subdir', 'DAGS_FOLDER/airQuality.py', '--cfg-path', '/tmp/tmpy07p_rn6']
+[2023-12-28T16:09:20.814+0000] {standard_task_runner.py:85} INFO - Job 786: Subtask Insert_Data
+[2023-12-28T16:09:20.899+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-22T04:00:00+00:00/task_id=Insert_Data permission to 509
+[2023-12-28T16:09:20.901+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-22T04:00:00+00:00/task_id=Insert_Data permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-22T04:00:00+00:00/task_id=Insert_Data'
+[2023-12-28T16:09:20.904+0000] {task_command.py:416} INFO - Running <TaskInstance: air_quality.Insert_Data scheduled__2023-12-22T04:00:00+00:00 [running]> on host d67dd4682ccf
+[2023-12-28T16:09:21.058+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ghifari' AIRFLOW_CTX_DAG_ID='air_quality' AIRFLOW_CTX_TASK_ID='Insert_Data' AIRFLOW_CTX_EXECUTION_DATE='2023-12-22T04:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-22T04:00:00+00:00'
+[2023-12-28T16:09:22.019+0000] {logging_mixin.py:154} INFO - city           object
+country        object
+unit           object
+last_value    float64
+lat           float64
+lng           float64
+dtype: object
+[2023-12-28T16:09:22.034+0000] {base.py:73} INFO - Using connection ID 'neonServerDB-Postgres' for task execution.
+[2023-12-28T16:09:23.151+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-12-28T16:09:23.205+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=air_quality, task_id=Insert_Data, execution_date=20231222T040000, start_date=20231228T160920, end_date=20231228T160923
+[2023-12-28T16:09:23.326+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-28T16:09:23.353+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-12-28T16:52:24.817+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-22T04:00:00+00:00/task_id=Insert_Data permission to 509
+[2023-12-28T16:52:24.821+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-22T04:00:00+00:00/task_id=Insert_Data permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-22T04:00:00+00:00/task_id=Insert_Data'
+[2023-12-28T16:52:24.905+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-22T04:00:00+00:00/task_id=Insert_Data permission to 509
+[2023-12-28T16:52:24.906+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-22T04:00:00+00:00/task_id=Insert_Data permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-22T04:00:00+00:00/task_id=Insert_Data'
+[2023-12-28T16:52:25.008+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: air_quality.Insert_Data scheduled__2023-12-22T04:00:00+00:00 [queued]>
+[2023-12-28T16:52:25.067+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: air_quality.Insert_Data scheduled__2023-12-22T04:00:00+00:00 [queued]>
+[2023-12-28T16:52:25.068+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-12-28T16:52:25.132+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): Insert_Data> on 2023-12-22 04:00:00+00:00
+[2023-12-28T16:52:25.146+0000] {standard_task_runner.py:57} INFO - Started process 526 to run task
+[2023-12-28T16:52:25.164+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'air_quality', 'Insert_Data', 'scheduled__2023-12-22T04:00:00+00:00', '--job-id', '949', '--raw', '--subdir', 'DAGS_FOLDER/airQuality.py', '--cfg-path', '/tmp/tmpljr8lgzv']
+[2023-12-28T16:52:25.179+0000] {standard_task_runner.py:85} INFO - Job 949: Subtask Insert_Data
+[2023-12-28T16:52:25.374+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-22T04:00:00+00:00/task_id=Insert_Data permission to 509
+[2023-12-28T16:52:25.380+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-22T04:00:00+00:00/task_id=Insert_Data permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-22T04:00:00+00:00/task_id=Insert_Data'
+[2023-12-28T16:52:25.386+0000] {task_command.py:416} INFO - Running <TaskInstance: air_quality.Insert_Data scheduled__2023-12-22T04:00:00+00:00 [running]> on host d67dd4682ccf
+[2023-12-28T16:52:25.684+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ghifari' AIRFLOW_CTX_DAG_ID='air_quality' AIRFLOW_CTX_TASK_ID='Insert_Data' AIRFLOW_CTX_EXECUTION_DATE='2023-12-22T04:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-22T04:00:00+00:00'
+[2023-12-28T16:52:27.171+0000] {logging_mixin.py:154} INFO - city           object
+country        object
+unit           object
+last_value    float64
+lat           float64
+lng           float64
+dtype: object
+[2023-12-28T16:52:27.198+0000] {base.py:73} INFO - Using connection ID 'neonServerDB-Postgres' for task execution.
+[2023-12-28T16:52:28.396+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-12-28T16:52:28.497+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=air_quality, task_id=Insert_Data, execution_date=20231222T040000, start_date=20231228T165225, end_date=20231228T165228
+[2023-12-28T16:52:28.698+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-28T16:52:28.778+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2023-12-28T16:55:25.969+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-22T04:00:00+00:00/task_id=Insert_Data permission to 509
+[2023-12-28T16:55:25.971+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-22T04:00:00+00:00/task_id=Insert_Data permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-22T04:00:00+00:00/task_id=Insert_Data'
+[2023-12-28T16:55:26.023+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-22T04:00:00+00:00/task_id=Insert_Data permission to 509
+[2023-12-28T16:55:26.025+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-22T04:00:00+00:00/task_id=Insert_Data permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-22T04:00:00+00:00/task_id=Insert_Data'
+[2023-12-28T16:55:26.084+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: air_quality.Insert_Data scheduled__2023-12-22T04:00:00+00:00 [queued]>
+[2023-12-28T16:55:26.108+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: air_quality.Insert_Data scheduled__2023-12-22T04:00:00+00:00 [queued]>
+[2023-12-28T16:55:26.109+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-12-28T16:55:26.132+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): Insert_Data> on 2023-12-22 04:00:00+00:00
+[2023-12-28T16:55:26.140+0000] {standard_task_runner.py:57} INFO - Started process 1540 to run task
+[2023-12-28T16:55:26.145+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'air_quality', 'Insert_Data', 'scheduled__2023-12-22T04:00:00+00:00', '--job-id', '1184', '--raw', '--subdir', 'DAGS_FOLDER/airQuality.py', '--cfg-path', '/tmp/tmp23in_vvd']
+[2023-12-28T16:55:26.147+0000] {standard_task_runner.py:85} INFO - Job 1184: Subtask Insert_Data
+[2023-12-28T16:55:26.233+0000] {logging_mixin.py:154} INFO - Changing /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-22T04:00:00+00:00/task_id=Insert_Data permission to 509
+[2023-12-28T16:55:26.234+0000] {logging_mixin.py:154} INFO - Failed to change /opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-22T04:00:00+00:00/task_id=Insert_Data permission to 509: [Errno 1] Operation not permitted: '/opt/***/logs/dag_id=air_quality/run_id=scheduled__2023-12-22T04:00:00+00:00/task_id=Insert_Data'
+[2023-12-28T16:55:26.237+0000] {task_command.py:416} INFO - Running <TaskInstance: air_quality.Insert_Data scheduled__2023-12-22T04:00:00+00:00 [running]> on host d67dd4682ccf
+[2023-12-28T16:55:26.359+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='ghifari' AIRFLOW_CTX_DAG_ID='air_quality' AIRFLOW_CTX_TASK_ID='Insert_Data' AIRFLOW_CTX_EXECUTION_DATE='2023-12-22T04:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-12-22T04:00:00+00:00'
+[2023-12-28T16:55:27.388+0000] {logging_mixin.py:154} INFO - city           object
+country        object
+unit           object
+last_value    float64
+lat           float64
+lng           float64
+dtype: object
+[2023-12-28T16:55:27.404+0000] {base.py:73} INFO - Using connection ID 'neonServerDB-Postgres' for task execution.
+[2023-12-28T16:55:27.633+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-12-28T16:55:27.646+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=air_quality, task_id=Insert_Data, execution_date=20231222T040000, start_date=20231228T165526, end_date=20231228T165527
+[2023-12-28T16:55:27.706+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-12-28T16:55:27.730+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
